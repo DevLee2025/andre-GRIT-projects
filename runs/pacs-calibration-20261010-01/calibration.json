@@ -1,0 +1,40 @@
+{
+  "study_kind": "real_data_calibration",
+  "controlled_study_eligible": false,
+  "feedback_exposed_coordinator": true,
+  "description_metadata_policy": "image-only by instruction; no OS-level isolation claimed",
+  "proposal_metadata_policy": "visible",
+  "review_metadata_policy": "visible",
+  "seed": 20261010,
+  "screened_class": "guitar",
+  "screened_domains": [
+    "photo",
+    "cartoon"
+  ],
+  "sample_size_per_domain": 40,
+  "target_group_size": 10,
+  "sampling_algorithm": "Python random.Random(seed); sample from sorted IDs by domain, then shuffle combined sample",
+  "held_out_domain": "sketch",
+  "image_reuse_limit": 1,
+  "scientific_export_requires_human_review": true,
+  "counts_toward_adaptive_update": false,
+  "extra_spec_snapshots": [
+    {
+      "path": "calibration_spec_snapshot/prompts/calibration_description_v1.md",
+      "sha256": "de34c49a818a1a71ecafdf7469439646e0b0c9481eaa958e1a9d972f687a994b",
+      "bytes": 1235
+    },
+    {
+      "path": "calibration_spec_snapshot/prompts/calibration_matching_v1.md",
+      "sha256": "09713aa0655bdcf80149d84934c05422791baad5780f2565d6199994e37083ca",
+      "bytes": 1557
+    },
+    {
+      "path": "calibration_spec_snapshot/specs/potential_review_criteria.md",
+      "sha256": "0565e28eb2d65be5d380b7ef06d3780c5d33a58d5ff86f29fa788cca77ca48fa",
+      "bytes": 4965
+    }
+  ],
+  "description_mapping_sha256": "9e09e1340567ba19cf7fd2e471eded0cce969942f1be051157c503c7b38cd3c3",
+  "api_tokens_and_cost": "not exposed by the chat/subagent tool; do not impute zero"
+}

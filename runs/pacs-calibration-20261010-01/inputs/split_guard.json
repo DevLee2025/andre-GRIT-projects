@@ -1,0 +1,11 @@
+{
+  "proposal_split": "train",
+  "target_domain": "sketch",
+  "eligible_image_count": 4850,
+  "manifest_sha256": "5104fa8c1d374c376b40afb637fb9998629634f01d2ea66259033813fc5d0bd2",
+  "candidate_pool_sha256": "7cdc3e2dc090f7092adca87f7d653c514916046e7d1a84d4ac361f8bcfdd6069",
+  "checks": {
+    "single_split_only": true,
+    "held_out_domain_absent": true
+  }
+}

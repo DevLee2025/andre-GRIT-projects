@@ -1,0 +1,52 @@
+{
+  "frozen_at": "2026-10-10T17:26:56.552Z",
+  "image_count": 80,
+  "descriptions": {
+    "path": "records/image_descriptions.jsonl",
+    "sha256": "094699ac194562cb60ec96c888b8cd742c9f2a7efa1adb18559a4a602598abcb",
+    "bytes": 262055
+  },
+  "sources": [
+    {
+      "path": "description_packages/batch-01/descriptions.jsonl",
+      "sha256": "f5923292ecfdaa8b353fb17ce738cb8705e0e5049f6cddbc77f584d672b3aeb8",
+      "bytes": 62616
+    },
+    {
+      "path": "description_packages/batch-01/inspection_log.json",
+      "sha256": "e8d7fcc5b5a85df61bc76c8b2ce1a07a4cb6aa1af821e12d362a76f8fba96918",
+      "bytes": 5870
+    },
+    {
+      "path": "description_packages/batch-02/descriptions.jsonl",
+      "sha256": "91ed068ee322c476befac6bdb8b97ca485d8c2e583411debb4970a3ce6422e88",
+      "bytes": 60754
+    },
+    {
+      "path": "description_packages/batch-02/inspection_log.json",
+      "sha256": "ea8cc5f6c5ea4533fcb97957a6d9ce203eef5c55a5f44a8506dfbacdb39555ff",
+      "bytes": 6453
+    },
+    {
+      "path": "description_packages/batch-03/descriptions.jsonl",
+      "sha256": "1a33f0e33ad4a12171ea7e1de05b508a6feb56c745ce9ad9cd034b3c0d7235ff",
+      "bytes": 63891
+    },
+    {
+      "path": "description_packages/batch-03/inspection_log.json",
+      "sha256": "5b74d324a67871d9c1777f4629b2c67eb33e89d072210b7274a96bcd74ed72cf",
+      "bytes": 7697
+    },
+    {
+      "path": "description_packages/batch-04/descriptions.jsonl",
+      "sha256": "64e22173a3ac9756a854d000ce051afa394d4cd2bace492d1aec6f3d32b82986",
+      "bytes": 65674
+    },
+    {
+      "path": "description_packages/batch-04/inspection_log.json",
+      "sha256": "38d7e7a7179e08d3b4f770a27cc5a80f7f01774c841012022208e17e903845e2",
+      "bytes": 4158
+    }
+  ],
+  "limitation": "Image-only instructions; no operating-system metadata isolation. Confidence is uncalibrated."
+}

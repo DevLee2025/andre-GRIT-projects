@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "checks": [
+    "datasets_reload",
+    "row_counts",
+    "required_pair_columns",
+    "nonempty_explicit_features",
+    "sole_accepted_pair_02",
+    "embedded_image_hashes_and_decode",
+    "complete_proposal_review_description_counts"
+  ],
+  "files": {
+    "invariant_pairs.parquet": {
+      "rows": 1,
+      "columns": 41,
+      "sha256": "e20bcbd617f6e4190d9341350d7a071b5e80fa1da470d0deadc53d00c0c3c4c4"
+    },
+    "grit_broad.parquet": {
+      "rows": 1,
+      "columns": 41,
+      "sha256": "e20bcbd617f6e4190d9341350d7a071b5e80fa1da470d0deadc53d00c0c3c4c4"
+    },
+    "grit_strict.parquet": {
+      "rows": 1,
+      "columns": 41,
+      "sha256": "e20bcbd617f6e4190d9341350d7a071b5e80fa1da470d0deadc53d00c0c3c4c4"
+    },
+    "groups.parquet": {
+      "rows": 1,
+      "columns": 14,
+      "sha256": "d049fc2ca92adc8651e8b6ccddfcdcc97530bb56c87a4b09c76b52e955758b02"
+    },
+    "group_members.parquet": {
+      "rows": 10,
+      "columns": 10,
+      "sha256": "5a0898f76b69c301c46dc6a45a056e66264a2804b509b3a0142886847eab8573"
+    },
+    "judgments.parquet": {
+      "rows": 4,
+      "columns": 19,
+      "sha256": "096441f8b24f4d476552405e333fda3bdc9854045d92d67e490bc9dd5e86153f"
+    },
+    "proposal_ledger.parquet": {
+      "rows": 10,
+      "columns": 15,
+      "sha256": "5407ee9da636795c02d7e9032326b2230d4dad8b1b2b48caa483174e8027fe12"
+    },
+    "image_descriptions.parquet": {
+      "rows": 80,
+      "columns": 11,
+      "sha256": "53a995ab8254b9042944779a4cd4f16a72bc614d8b903323b9399a05ac46a403"
+    }
+  },
+  "provenance": {
+    "study_kind": "real_data_calibration",
+    "controlled_study_eligible": false,
+    "counts_toward_adaptive_update": false,
+    "prompt_sha256": "09713aa0655bdcf80149d84934c05422791baad5780f2565d6199994e37083ca",
+    "description_prompt_sha256": "de34c49a818a1a71ecafdf7469439646e0b0c9481eaa958e1a9d972f687a994b",
+    "calibration_metadata_sha256": "b6166b19a57a51f367aac03dd4e827cb6d9bfc6af33c90de6a1534b351ebdfd3"
+  },
+  "pair_counts": {
+    "total": 1,
+    "calibration": 1,
+    "controlled_study_eligible": 0,
+    "adaptive_update_eligible": 0
+  },
+  "validation_resume": "All eight tables were written successfully; initial datasets reload was blocked by Windows sandbox Temp permissions. Resumed validation preserves the existing Parquet bytes."
+}

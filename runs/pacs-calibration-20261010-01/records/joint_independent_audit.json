@@ -1,0 +1,125 @@
+[
+  {
+    "pair_number": 1,
+    "aliases": [
+      "I027",
+      "I034"
+    ],
+    "status": "unsure",
+    "visible_evidence": "Both show one acoustic-guitar-shaped instrument displayed without a player: an upright wooden instrument and a horizontal tan illustration, each with a round sound hole. I034 includes body, neck and headstock; I027's upper headstock lies extremely close to the top border.",
+    "uncertainties": [
+      "I027's uppermost headstock contour is not securely separated from the image edge, so complete headstock extent is uncertain."
+    ]
+  },
+  {
+    "pair_number": 2,
+    "aliases": [
+      "I030",
+      "I051"
+    ],
+    "status": "pass",
+    "visible_evidence": "Each image shows exactly one displayed acoustic guitar with a waisted body, circular sound hole, bridge, fretted neck and headstock. I030 is upright on a dark background; I051 is a diagonal brown illustration. Neither shows a player or another instrument.",
+    "uncertainties": [
+      "I030's lower body is tightly framed against the bottom edge; no substantial body or neck section is missing."
+    ]
+  },
+  {
+    "pair_number": 3,
+    "aliases": [
+      "I031",
+      "I016"
+    ],
+    "status": "pass",
+    "visible_evidence": "Each shows exactly one displayed acoustic guitar, with body, neck and headstock visible and no player. I031 stands beside plants and flowers; I016 is an orange-brown illustration beside musical notation. The dark neck-like silhouette on I031's fence is a cast shadow, not a second instrument.",
+    "uncertainties": [
+      "I031 is tightly framed at the headstock and lower body, but the instrument remains substantially whole."
+    ]
+  },
+  {
+    "pair_number": 4,
+    "aliases": [
+      "I044",
+      "I010"
+    ],
+    "status": "pass",
+    "visible_evidence": "Both show exactly one isolated or displayed acoustic guitar with round sound hole, bridge, neck and headstock, without hands or a player. I044 is an upright sunburst instrument against a wall; I010 is an orange diagonal cartoon. Both retain whole-instrument extent.",
+    "uncertainties": [
+      "I044's headstock and bottom of body lie close to the frame edges; this is tight framing without material loss of neck or headstock."
+    ]
+  },
+  {
+    "pair_number": 5,
+    "aliases": [
+      "I049",
+      "I079"
+    ],
+    "status": "unsure",
+    "visible_evidence": "Both show one acoustic-guitar-shaped instrument without a player: I049 is a sunburst guitar and I079 a red illustration. I049's angled headstock runs into the top border; I079 includes its body, neck and headstock.",
+    "uncertainties": [
+      "I049's upper headstock is visibly clipped by the top edge; its missing extent cannot be securely bounded. Whole-instrument equivalence is therefore uncertain.",
+      "I079 has simplified proportions and hardware, limiting finer subtype identification."
+    ]
+  },
+  {
+    "pair_number": 6,
+    "aliases": [
+      "I057",
+      "I050"
+    ],
+    "status": "unsure",
+    "visible_evidence": "Each shows exactly one displayed string instrument with a waisted acoustic-style body and round sound hole, without a player. I057 is a pale guitar on a bench; I050 is a blue illustration with a long narrow neck and a tuning cluster along one side. Bodies and necks are shown.",
+    "uncertainties": [
+      "I050's simplified long neck and one-sided headstock details leave ordinary guitar versus bass-like depiction uncertain; exact guitar class is not secure.",
+      "I050's headstock touches the upper-right frame and its body touches the bottom, so the illustration is tightly framed."
+    ]
+  },
+  {
+    "pair_number": 7,
+    "aliases": [
+      "I067",
+      "I061"
+    ],
+    "status": "pass",
+    "visible_evidence": "Each shows exactly one displayed acoustic guitar with a circular sound hole, bridge, complete neck and headstock. I067 is upright before a door; I061 is a diagonal brown illustration under a large watermark. No player or second instrument is visible.",
+    "uncertainties": [
+      "I067 is tightly framed at the top and bottom; its visible outline still establishes a substantially whole instrument.",
+      "I061's watermark overlays the body, but count, class and whole-instrument extent remain visible."
+    ]
+  },
+  {
+    "pair_number": 8,
+    "aliases": [
+      "I040",
+      "I058"
+    ],
+    "status": "pass",
+    "visible_evidence": "Each shows exactly one isolated electric guitar with a solid-looking single-cutaway body, pickups, controls, neck and headstock, without a player. I040 has an amber body against black; I058 has a red body against white. Both are shown at whole-instrument scale.",
+    "uncertainties": [
+      "I040's headstock tip is very tightly framed at the top, with possible slight tip truncation; the neck and recognizable headstock are retained."
+    ]
+  },
+  {
+    "pair_number": 9,
+    "aliases": [
+      "I063",
+      "I039"
+    ],
+    "status": "pass",
+    "visible_evidence": "Each shows exactly one displayed blue electric guitar with pickups, a waisted body, neck and headstock, without a player. I063 is an upright photograph; I039 is a blue illustration with curved sound-hole marks. Both bodies and necks are shown, and I063's headstock remains recognizable at the upper edge.",
+    "uncertainties": [
+      "I063's headstock has a very narrow top margin. No material portion of the neck or headstock is visibly absent, but framing is tight."
+    ]
+  },
+  {
+    "pair_number": 10,
+    "aliases": [
+      "I080",
+      "I026"
+    ],
+    "status": "unsure",
+    "visible_evidence": "I080 shows one isolated green electric guitar with pickups, neck and headstock. I026 shows one whole pink electric-guitar-shaped illustration with star decorations, oversized circular marks and highly simplified neck and hardware. Neither depicts a player or a second instrument.",
+    "uncertainties": [
+      "I026 may depict a toy or decorative guitar-shaped object rather than the same instrument class as I080; its schematic hardware does not resolve that distinction."
+    ]
+  }
+]

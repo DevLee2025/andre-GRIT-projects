@@ -1,0 +1,368 @@
+{
+  "schema_version": 1,
+  "group_id": "CAL-20261010-001",
+  "run_id": "pacs-calibration-20261010-01",
+  "condition": "calibration_visible",
+  "calibration_notice": "Real-data calibration. Metadata is visible. This session has seen earlier feedback, so this group is excluded from controlled-condition comparisons. No pair is accepted until human review.",
+  "semantic_claim": "Each proposed pair depicts one whole guitar, isolated or displayed rather than held or played. This is a shared coarse semantic state, not a claim of identical physical instruments or proof that every remaining difference is spurious.",
+  "coverage_summary": {
+    "scope": "10 photo-to-cartoon proposals from 20 distinct source-training images: six acoustic and four electric pairs. One object class and one domain-pair type out of the 42 PACS class/domain-pair types; not PACS-wide coverage.",
+    "background": "Photos span plain fields, grass, bench and foliage, paneled doors and a decorated wall. Most candidates have white graphic fields. The contrasts are directionally imbalanced.",
+    "palette": "Natural wood, sunburst, red and blue photos versus brown, orange, red, gray-beige, blue and green candidates. Some palettes are similar; color change is not universal.",
+    "lighting": "Outdoor cast and dappled shadows, product-like reflections and flatter illustrated shading are present. Illumination has not been isolated experimentally.",
+    "texture": "Wood grain, grass, photographic surface detail, flat fills, outlines and stock-image watermarks. Watermarks are a possible nuisance and shortcut, not a desired semantic property.",
+    "viewpoint": "Mostly frontal or modestly oblique. Little rear, side-on or strongly occluded viewing; much visible change is rotation rather than 3-D viewpoint.",
+    "crop": "Whole-object presentation is retained with varying margin and scale. This group does not cover whole-to-detail changes; several objects are tightly framed.",
+    "composition": "Upright, rightward and diagonal instruments; one target guitar per image. A bench, flowers, notation, amplifier or cable adds scene content in some pairs.",
+    "context": "Grass, bench, interior walls, musical notation, amplifier and cable may carry meaning beyond background. Context is recorded as a potential semantic factor, not automatically counted as spurious.",
+    "redundancy": "No repeated image, duplicate source bytes or duplicate decoded pixels. Repeated displayed-state silhouettes and white candidate backgrounds remain; no exhaustive perceptual near-duplicate certification is claimed.",
+    "missing_variation": "No other object class, held or played state, multi-guitar scene, art-painting domain or sketch domain. Sketch remains held out. No image was selected from validation or test.",
+    "audit_selection": "Actual numerical roles are assigned after the group is fixed: medoid minimizes mean cosine distance between pair centers; boundary is farthest from that medoid; outlier maximizes nearest-neighbor distance; a seeded draw selects a random pair; minimum uncalibrated confidence selects the remaining role. Roles may overlap and do not establish validity.",
+    "confidence": "Coordinator scores range from 0.85 to 0.92 and are not calibrated. Fine construction, crop and context concerns remain for human judgment."
+  },
+  "reasons_group_may_fail": [
+    "Class, count and displayed state may be too coarse for semantic equivalence: body construction, cutaway shape, hardware, props or notation may change meaning.",
+    "Source domain labels need not match intuitive appearance: the green guitar candidate looks realistic despite its cartoon label. Labels are not proof of semantic agreement or style contrast. Membership was checked against the frozen manifest.",
+    "Descriptions at 227x227 cannot reliably resolve strings, tiny extra depictions or fine hardware. A second model check reduces neither uncertainty nor human workload to zero.",
+    "Coverage is deliberately narrow, with many plain white candidates and similar displayed-object shapes. Individual acceptance would not demonstrate broad group coverage.",
+    "Feedback exposure, hand-selected semantic grouping and a single small calibration batch prevent claims about fixed/adaptive effects or downstream GRIT robustness."
+  ],
+  "proposal_method": "Independent image-only descriptions of a seeded 40-photo/40-cartoon training sample; coordinator metadata-visible matching; joint native-pixel check; independent second model check; retained shortlist revisions. Existing image features select audit highlights only, not pair matches.",
+  "pairs": [
+    {
+      "pair_id": "CAL-001-01",
+      "position": 1,
+      "anchor_alias": "I028",
+      "candidate_alias": "I034",
+      "target_count": 1,
+      "activity_pose_state": "isolated/displayed; whole object",
+      "spurious_axes": [
+        "palette",
+        "texture",
+        "lighting",
+        "viewpoint",
+        "composition"
+      ],
+      "highlighted_roles": [],
+      "semantic_rationale": "Each image shows one acoustic guitar without a player: a waisted body, round sound hole, attached fretted neck and tuning head. Both show the instrument as a whole, with the neck directed toward the right.",
+      "spurious_rationale": "The pale wooden photograph has visible grain, a handwritten marking, depth and soft shadow. The drawing uses a yellow flat fill, heavy black edges and a plain white field. Tilt and apparent depth differ.",
+      "uncertainty": "Body outline, pickguard shape and the handwritten marking differ. Exact model and string count are unresolved; these are not claims of identical physical instruments. The photo's tuning head is tightly framed at the right.",
+      "confidence": 0.9,
+      "confidence_meaning": "Uncalibrated coordinator estimate under the coarse rubric; not a probability of human acceptance.",
+      "joint_pixel_check": {
+        "outcome": "pass",
+        "reviewer_type": "model",
+        "checked_at": "2026-10-10T17:30:59.770Z",
+        "evidence": "Each image shows one acoustic guitar without a player: a waisted body, round sound hole, attached fretted neck and tuning head. Both show the instrument as a whole, with the neck directed toward the right.",
+        "limitations": "Body outline, pickguard shape and the handwritten marking differ. Exact model and string count are unresolved; these are not claims of identical physical instruments. The photo's tuning head is tightly framed at the right.",
+        "viewed_artifact": "records/final-joint-sheet-01.png",
+        "native_image_size": [
+          227,
+          227
+        ]
+      }
+    },
+    {
+      "pair_id": "CAL-001-02",
+      "position": 2,
+      "anchor_alias": "I030",
+      "candidate_alias": "I051",
+      "target_count": 1,
+      "activity_pose_state": "isolated/displayed; whole object",
+      "spurious_axes": [
+        "background",
+        "texture",
+        "lighting",
+        "composition",
+        "viewpoint"
+      ],
+      "highlighted_roles": [],
+      "semantic_rationale": "Both show one acoustic guitar alone, with its complete body, sound hole, neck and headstock visible. Neither is held or played. The upright versus diagonal presentation preserves the displayed-object state.",
+      "spurious_rationale": "The photo presents strongly striped wood against near black; the illustration presents more uniform brown shading on white. Surface grain, lighting cues, background and rotation change visibly.",
+      "uncertainty": "The body silhouette and detailed bridge and headstock construction differ. A guitar's exact construction is not a locked match criterion, but could matter to the human reviewer.",
+      "confidence": 0.92,
+      "confidence_meaning": "Uncalibrated coordinator estimate under the coarse rubric; not a probability of human acceptance.",
+      "joint_pixel_check": {
+        "outcome": "pass",
+        "reviewer_type": "model",
+        "checked_at": "2026-10-10T17:30:59.770Z",
+        "evidence": "Both show one acoustic guitar alone, with its complete body, sound hole, neck and headstock visible. Neither is held or played. The upright versus diagonal presentation preserves the displayed-object state.",
+        "limitations": "The body silhouette and detailed bridge and headstock construction differ. A guitar's exact construction is not a locked match criterion, but could matter to the human reviewer.",
+        "viewed_artifact": "records/final-joint-sheet-01.png",
+        "native_image_size": [
+          227,
+          227
+        ]
+      }
+    },
+    {
+      "pair_id": "CAL-001-03",
+      "position": 3,
+      "anchor_alias": "I031",
+      "candidate_alias": "I016",
+      "target_count": 1,
+      "activity_pose_state": "isolated/displayed; whole object",
+      "spurious_axes": [
+        "background",
+        "texture",
+        "lighting",
+        "composition"
+      ],
+      "highlighted_roles": [],
+      "semantic_rationale": "Both contain one whole acoustic guitar displayed without a person. The dark guitar-shaped outline behind the photographed neck is a shadow; the symbols beside the illustrated guitar are musical notation, not additional instruments.",
+      "spurious_rationale": "Wooden boards, flowers, foliage and a cast shadow in the photo become a white field with drawn notation. Fine photographic grain and directional lighting become smoother illustrated surfaces.",
+      "uncertainty": "The musical notes could suggest music or performance conceptually, although no person is playing the drawn guitar. The outdoor setting may carry contextual meaning; it is recorded separately rather than assumed harmless.",
+      "confidence": 0.88,
+      "confidence_meaning": "Uncalibrated coordinator estimate under the coarse rubric; not a probability of human acceptance.",
+      "joint_pixel_check": {
+        "outcome": "pass",
+        "reviewer_type": "model",
+        "checked_at": "2026-10-10T17:30:59.770Z",
+        "evidence": "Both contain one whole acoustic guitar displayed without a person. The dark guitar-shaped outline behind the photographed neck is a shadow; the symbols beside the illustrated guitar are musical notation, not additional instruments.",
+        "limitations": "The musical notes could suggest music or performance conceptually, although no person is playing the drawn guitar. The outdoor setting may carry contextual meaning; it is recorded separately rather than assumed harmless.",
+        "viewed_artifact": "records/final-joint-sheet-01.png",
+        "native_image_size": [
+          227,
+          227
+        ]
+      }
+    },
+    {
+      "pair_id": "CAL-001-04",
+      "position": 4,
+      "anchor_alias": "I044",
+      "candidate_alias": "I010",
+      "target_count": 1,
+      "activity_pose_state": "isolated/displayed; whole object",
+      "spurious_axes": [
+        "background",
+        "palette",
+        "texture",
+        "lighting",
+        "composition"
+      ],
+      "highlighted_roles": [],
+      "semantic_rationale": "Each image depicts one whole acoustic guitar without a player, preserving the body, sound-hole, neck and headstock configuration and displayed state.",
+      "spurious_rationale": "The photo has a shaded sunburst body against a red wall and decorative panels. The cartoon has an orange body, yellow neck and green headstock outlined in black on white, with a diagonal presentation.",
+      "uncertainty": "The photo has a cutaway and detailed fretboard decoration absent from the cartoon. Simplified cartoon hardware does not establish exact string count. The photographic body is closely framed at the bottom.",
+      "confidence": 0.88,
+      "confidence_meaning": "Uncalibrated coordinator estimate under the coarse rubric; not a probability of human acceptance.",
+      "joint_pixel_check": {
+        "outcome": "pass",
+        "reviewer_type": "model",
+        "checked_at": "2026-10-10T17:30:59.770Z",
+        "evidence": "Each image depicts one whole acoustic guitar without a player, preserving the body, sound-hole, neck and headstock configuration and displayed state.",
+        "limitations": "The photo has a cutaway and detailed fretboard decoration absent from the cartoon. Simplified cartoon hardware does not establish exact string count. The photographic body is closely framed at the bottom.",
+        "viewed_artifact": "records/final-joint-sheet-01.png",
+        "native_image_size": [
+          227,
+          227
+        ]
+      }
+    },
+    {
+      "pair_id": "CAL-001-05",
+      "position": 5,
+      "anchor_alias": "I021",
+      "candidate_alias": "I029",
+      "target_count": 1,
+      "activity_pose_state": "isolated/displayed; whole object",
+      "spurious_axes": [
+        "background",
+        "palette",
+        "texture",
+        "lighting",
+        "composition"
+      ],
+      "highlighted_roles": [],
+      "semantic_rationale": "Both show one complete electric guitar without a person holding or playing it. The body, neck, headstock and electrical hardware remain visible despite the different image-plane orientations.",
+      "spurious_rationale": "The photographed amber-brown instrument rests on textured grass. The red outlined illustration appears on white with simplified highlights and a watermark. Background, surface detail, palette and orientation change.",
+      "uncertainty": "The photo has a solid-body form while the cartoon suggests a hollow-body form with curved sound-hole marks. The pair meets the coarse class/count/state proposal rule, but construction differences remain a substantive reviewer concern.",
+      "confidence": 0.87,
+      "confidence_meaning": "Uncalibrated coordinator estimate under the coarse rubric; not a probability of human acceptance.",
+      "joint_pixel_check": {
+        "outcome": "pass",
+        "reviewer_type": "model",
+        "checked_at": "2026-10-10T17:30:59.770Z",
+        "evidence": "Both show one complete electric guitar without a person holding or playing it. The body, neck, headstock and electrical hardware remain visible despite the different image-plane orientations.",
+        "limitations": "The photo has a solid-body form while the cartoon suggests a hollow-body form with curved sound-hole marks. The pair meets the coarse class/count/state proposal rule, but construction differences remain a substantive reviewer concern.",
+        "viewed_artifact": "records/final-joint-sheet-02.png",
+        "native_image_size": [
+          227,
+          227
+        ]
+      }
+    },
+    {
+      "pair_id": "CAL-001-06",
+      "position": 6,
+      "anchor_alias": "I057",
+      "candidate_alias": "I015",
+      "target_count": 1,
+      "activity_pose_state": "isolated/displayed; whole object",
+      "spurious_axes": [
+        "background",
+        "palette",
+        "lighting",
+        "texture",
+        "composition"
+      ],
+      "highlighted_roles": [],
+      "semantic_rationale": "Both show one whole acoustic guitar without a person, with a rounded waisted body, circular sound hole, neck and tuning head. The photographed guitar rests on a bench. The candidate is presented as a guitar graphic; surrounding notes are symbols rather than additional instruments.",
+      "spurious_rationale": "The photo has natural wood tones, foliage, a slatted bench and patchy sunlight. The drawing has a gray-beige guitar with heavy contours, bright green and yellow bands and colored musical notes. Background, palette, texture, lighting and orientation differ.",
+      "uncertainty": "Musical notation may suggest performance conceptually although no player is depicted. Cartoon construction is schematic and fine string count is unresolved. The candidate headstock is close to the upper-right border; the main silhouette is visible.",
+      "confidence": 0.88,
+      "confidence_meaning": "Uncalibrated coordinator estimate under the coarse rubric; not a probability of human acceptance.",
+      "joint_pixel_check": {
+        "outcome": "pass",
+        "reviewer_type": "model",
+        "checked_at": "2026-10-10T17:30:59.770Z",
+        "evidence": "Both show one whole acoustic guitar without a person, with a rounded waisted body, circular sound hole, neck and tuning head. The photographed guitar rests on a bench. The candidate is presented as a guitar graphic; surrounding notes are symbols rather than additional instruments.",
+        "limitations": "Musical notation may suggest performance conceptually although no player is depicted. Cartoon construction is schematic and fine string count is unresolved. The candidate headstock is close to the upper-right border; the main silhouette is visible.",
+        "viewed_artifact": "records/final-joint-sheet-02.png",
+        "native_image_size": [
+          227,
+          227
+        ]
+      }
+    },
+    {
+      "pair_id": "CAL-001-07",
+      "position": 7,
+      "anchor_alias": "I067",
+      "candidate_alias": "I061",
+      "target_count": 1,
+      "activity_pose_state": "isolated/displayed; whole object",
+      "spurious_axes": [
+        "background",
+        "palette",
+        "texture",
+        "lighting",
+        "composition"
+      ],
+      "highlighted_roles": [],
+      "semantic_rationale": "Both depict one complete acoustic guitar, without hands or a player, with body, sound hole and attached neck/headstock identifiable. The photo is upright on a support; the drawing is diagonally isolated.",
+      "spurious_rationale": "Pale wood and paneled doors become a darker brown illustration on white with broad watermark lettering. Background, surface shading, texture and rotation change.",
+      "uncertainty": "Large watermark lettering overlays the candidate's body and strings, limiting fine detail. The photographic guitar has a cutaway while the drawing has a continuous upper contour. Exact instrument construction is not established as invariant.",
+      "confidence": 0.85,
+      "confidence_meaning": "Uncalibrated coordinator estimate under the coarse rubric; not a probability of human acceptance.",
+      "joint_pixel_check": {
+        "outcome": "pass",
+        "reviewer_type": "model",
+        "checked_at": "2026-10-10T17:30:59.770Z",
+        "evidence": "Both depict one complete acoustic guitar, without hands or a player, with body, sound hole and attached neck/headstock identifiable. The photo is upright on a support; the drawing is diagonally isolated.",
+        "limitations": "Large watermark lettering overlays the candidate's body and strings, limiting fine detail. The photographic guitar has a cutaway while the drawing has a continuous upper contour. Exact instrument construction is not established as invariant.",
+        "viewed_artifact": "records/final-joint-sheet-02.png",
+        "native_image_size": [
+          227,
+          227
+        ]
+      }
+    },
+    {
+      "pair_id": "CAL-001-08",
+      "position": 8,
+      "anchor_alias": "I040",
+      "candidate_alias": "I080",
+      "target_count": 1,
+      "activity_pose_state": "isolated/displayed; whole object",
+      "spurious_axes": [
+        "background",
+        "palette",
+        "texture",
+        "lighting",
+        "viewpoint",
+        "composition"
+      ],
+      "highlighted_roles": [],
+      "semantic_rationale": "Both show exactly one whole electric guitar displayed alone without a player. Each has a solid-looking body, pickups, fretted neck and recognizable tuning head. Oblique and upright presentation preserve the displayed-object state.",
+      "spurious_rationale": "The large amber figured-wood guitar on black is paired with a smaller centered green patterned guitar on white. Background, palette, finish detail, apparent perspective, illumination and scale differ.",
+      "uncertainty": "The instruments have different body and headstock shapes. Both images appear realistic, although their recorded PACS domains differ; a large rendering-style contrast is not claimed. The photograph headstock is tightly framed, with possible slight tip truncation.",
+      "confidence": 0.89,
+      "confidence_meaning": "Uncalibrated coordinator estimate under the coarse rubric; not a probability of human acceptance.",
+      "joint_pixel_check": {
+        "outcome": "pass",
+        "reviewer_type": "model",
+        "checked_at": "2026-10-10T17:30:59.770Z",
+        "evidence": "Both show exactly one whole electric guitar displayed alone without a player. Each has a solid-looking body, pickups, fretted neck and recognizable tuning head. Oblique and upright presentation preserve the displayed-object state.",
+        "limitations": "The instruments have different body and headstock shapes. Both images appear realistic, although their recorded PACS domains differ; a large rendering-style contrast is not claimed. The photograph headstock is tightly framed, with possible slight tip truncation.",
+        "viewed_artifact": "records/domain-corrected-pairs.png",
+        "native_image_size": [
+          227,
+          227
+        ]
+      }
+    },
+    {
+      "pair_id": "CAL-001-09",
+      "position": 9,
+      "anchor_alias": "I063",
+      "candidate_alias": "I039",
+      "target_count": 1,
+      "activity_pose_state": "isolated/displayed; whole object",
+      "spurious_axes": [
+        "background",
+        "texture",
+        "lighting",
+        "composition"
+      ],
+      "highlighted_roles": [],
+      "semantic_rationale": "Each depicts one upright blue electric guitar displayed without a player. One continuous body, neck and headstock can be followed; no second instrument is visible.",
+      "spurious_rationale": "The photograph includes a pale wall, a dark support and visible body reflections and shadow. The cartoon uses cyan fill, dark outline and simplified hardware on a white field with stock-image marks.",
+      "uncertainty": "The cartoon has curved sound-hole marks and a different body shape from the photo. The photo's tuning head is tightly framed. Similar blue palettes mean palette diversity is limited for this pair.",
+      "confidence": 0.89,
+      "confidence_meaning": "Uncalibrated coordinator estimate under the coarse rubric; not a probability of human acceptance.",
+      "joint_pixel_check": {
+        "outcome": "pass",
+        "reviewer_type": "model",
+        "checked_at": "2026-10-10T17:30:59.770Z",
+        "evidence": "Each depicts one upright blue electric guitar displayed without a player. One continuous body, neck and headstock can be followed; no second instrument is visible.",
+        "limitations": "The cartoon has curved sound-hole marks and a different body shape from the photo. The photo's tuning head is tightly framed. Similar blue palettes mean palette diversity is limited for this pair.",
+        "viewed_artifact": "records/final-joint-sheet-03.png",
+        "native_image_size": [
+          227,
+          227
+        ]
+      }
+    },
+    {
+      "pair_id": "CAL-001-10",
+      "position": 10,
+      "anchor_alias": "I058",
+      "candidate_alias": "I009",
+      "target_count": 1,
+      "activity_pose_state": "isolated/displayed; whole object",
+      "spurious_axes": [
+        "texture",
+        "lighting",
+        "composition"
+      ],
+      "highlighted_roles": [],
+      "semantic_rationale": "Each image shows one whole red electric guitar displayed without a player, with a body, pickups, fretted neck and headstock. The photographed instrument is isolated; the drawn instrument is in front of an amplifier with a cable. The amplifier and cable are not additional guitars.",
+      "spurious_rationale": "The photo has realistic gloss, gold-colored hardware and an oblique diagonal presentation. The cartoon has heavy contours, simplified reflections, gray hardware, a dark amplifier and a looping cable. Texture, lighting cues and composition change while the broad red palette is similar.",
+      "uncertainty": "The amplifier and cable add equipment context absent from the photo, which may be meaningful to the reviewer. Body and hardware details differ. Both backgrounds are broadly white and palettes are similar, so this pair contributes limited background or palette diversity.",
+      "confidence": 0.9,
+      "confidence_meaning": "Uncalibrated coordinator estimate under the coarse rubric; not a probability of human acceptance.",
+      "joint_pixel_check": {
+        "outcome": "pass",
+        "reviewer_type": "model",
+        "checked_at": "2026-10-10T17:30:59.770Z",
+        "evidence": "Each image shows one whole red electric guitar displayed without a player, with a body, pickups, fretted neck and headstock. The photographed instrument is isolated; the drawn instrument is in front of an amplifier with a cable. The amplifier and cable are not additional guitars.",
+        "limitations": "The amplifier and cable add equipment context absent from the photo, which may be meaningful to the reviewer. Body and hardware details differ. Both backgrounds are broadly white and palettes are similar, so this pair contributes limited background or palette diversity.",
+        "viewed_artifact": "records/domain-corrected-pairs.png",
+        "native_image_size": [
+          227,
+          227
+        ]
+      }
+    }
+  ],
+  "draft_revision": {
+    "predecessor": "records/group-draft-v2.json",
+    "changes": [
+      "Domain guard rejected original pair08 (I040/I058: photo/photo) and pair10 (I080/I009: cartoon/cartoon). The coordinator had inferred domain from appearance incorrectly; no group was published.",
+      "Re-pair the same four images: pair08 I040(photo)/I080(cartoon), pair10 I058(photo)/I009(cartoon). Require fresh independent joint checks for these exact pairs."
+    ],
+    "policy": "All prior drafts and model audit records retained. No human review has occurred; no initial-viewer artifact was published by the failed finalization."
+  }
+}

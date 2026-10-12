@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "run_id": "pacs-calibration-20261010-01",
+  "created_at": "2026-10-10T17:17:40.008Z",
+  "seed": 20261010,
+  "model": "inherited Codex session; exact model revision not surfaced",
+  "reasoning_effort": "inherited; exact setting not surfaced",
+  "conditions": [
+    "calibration_visible"
+  ],
+  "condition_order": [
+    "calibration_visible"
+  ],
+  "proposal_split": "train",
+  "evaluation_protocol": "pacs_held_out_domain",
+  "target_domain": "sketch",
+  "judgment_stage_for_export": "revised",
+  "group_sizes": [
+    10
+  ],
+  "adaptive_update": {
+    "completed_initial_groups": 5,
+    "individually_audited_pairs": 20
+  },
+  "spurious_axes": [
+    "background",
+    "palette",
+    "lighting",
+    "texture",
+    "viewpoint",
+    "crop",
+    "composition"
+  ],
+  "manifest": {
+    "path": "web/public/manifest.json",
+    "sha256": "5104fa8c1d374c376b40afb637fb9998629634f01d2ea66259033813fc5d0bd2",
+    "bytes": 3088302
+  },
+  "candidate_pool": {
+    "image_count": 4850,
+    "classes": [
+      "dog",
+      "elephant",
+      "giraffe",
+      "guitar",
+      "horse",
+      "house",
+      "person"
+    ],
+    "domains": [
+      "art_painting",
+      "cartoon",
+      "photo"
+    ],
+    "split_counts": {
+      "train": 4850
+    },
+    "index_file": "inputs/candidate_pool.jsonl",
+    "sha256": "7cdc3e2dc090f7092adca87f7d653c514916046e7d1a84d4ac361f8bcfdd6069",
+    "images_hashed": true,
+    "image_hash_algorithm": "sha256"
+  },
+  "spec_snapshot": [
+    {
+      "path": "specs/pacs_source.json",
+      "sha256": "f74e0dba9fa8042b27e73b95b775655891c18484c5445c8227c9b6782c19f11c",
+      "bytes": 1014
+    },
+    {
+      "path": "specs/pair_definition.md",
+      "sha256": "e617740407ff16d061eb6edad119d43092997eeb340a8491ce5f4909300a8e11",
+      "bytes": 2928
+    },
+    {
+      "path": "specs/image_description.schema.json",
+      "sha256": "dcd323da247903048c4d1a3d02cfda67f5b2c74e86aa5ce4456f88e4d6523c36",
+      "bytes": 2792
+    },
+    {
+      "path": "specs/matching_policy.md",
+      "sha256": "7ccb3ae8f08d0ed18b65bfb61e2b7387a3262c9fe20c15264275ce85dd0fb962",
+      "bytes": 2183
+    },
+    {
+      "path": "specs/grouping_policy.md",
+      "sha256": "5be13733ac1c614241178d2e17b381a4bbaed8c09e9976b2252ec9e8ee81ca52",
+      "bytes": 1663
+    },
+    {
+      "path": "specs/group.schema.json",
+      "sha256": "72271cedb5f913a722528678b7c9d77143c74690122c7f1bcea8662f2ff6388c",
+      "bytes": 2754
+    },
+    {
+      "path": "specs/review_protocol.md",
+      "sha256": "f19ac5028401ae58a6927b6719110c007acab89041940e969bcb58b2838f91f7",
+      "bytes": 5649
+    },
+    {
+      "path": "specs/review_event.schema.json",
+      "sha256": "6262e1c3c13f9479d5938d9b593388252a84517f8afafa56dbac40936c55c5e0",
+      "bytes": 2165
+    },
+    {
+      "path": "specs/export_schema.json",
+      "sha256": "56ba63936fc6900400562d381f92c9ac35494d7cb0e42a82eeb2061a9aa0e289",
+      "bytes": 2765
+    },
+    {
+      "path": "specs/run_config.schema.json",
+      "sha256": "e7a86cc57bae6291d7e2121f94214d50b7fff7cea3272ed655453ef744ab4ad7",
+      "bytes": 3636
+    },
+    {
+      "path": "prompts/proposer_fixed_hidden_v1.md",
+      "sha256": "bdc96095fbb5370a08375f1154c544533b81b1eaeb85135e8d8db42ff7f1c488",
+      "bytes": 6469
+    }
+  ]
+}

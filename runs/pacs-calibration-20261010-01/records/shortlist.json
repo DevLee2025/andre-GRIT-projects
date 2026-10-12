@@ -1,0 +1,16 @@
+{
+  "group_id": "CAL-20261010-001",
+  "basis": "Model matching after all 80 independent image descriptions were frozen. This shortlist is for a joint pixel check, not a human judgment.",
+  "pairs": [
+    ["I027", "I034"],
+    ["I030", "I051"],
+    ["I031", "I016"],
+    ["I044", "I010"],
+    ["I049", "I079"],
+    ["I057", "I050"],
+    ["I067", "I061"],
+    ["I040", "I058"],
+    ["I063", "I039"],
+    ["I080", "I026"]
+  ]
+}

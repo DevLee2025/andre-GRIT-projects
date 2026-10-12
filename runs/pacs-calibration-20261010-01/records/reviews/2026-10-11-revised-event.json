@@ -1,0 +1,123 @@
+{
+  "reviewer_id": "lab-reviewer-001",
+  "inspection": {
+    "mode": "highlighted_and_full_contact_sheet",
+    "pair_ids": []
+  },
+  "pair_validity": "reject",
+  "coverage": "incomplete",
+  "exceptions": [
+    {
+      "comment": "Reviewer names 02 as the sole exception to rejection; no separate acceptance rationale supplied.",
+      "pair_id": "CAL-001-02",
+      "verdict": "accept"
+    }
+  ],
+  "pair_comments": [
+    {
+      "comment": "Reviewer reports preserved pick guard but a fully rounded body versus a single cutaway.",
+      "establishes_individual_review": true,
+      "pair_id": "CAL-001-01"
+    },
+    {
+      "comment": "Reviewer reports the same body shape but presence versus absence of a pick guard. The ukulele comparison is an example of ambiguous typing from proportions, not a verified relabeling.",
+      "establishes_individual_review": true,
+      "pair_id": "CAL-001-03"
+    },
+    {
+      "comment": "Reviewer reports matching body shape but different pick guards, discernably different headstocks, and presence versus absence of f holes.",
+      "establishes_individual_review": true,
+      "pair_id": "CAL-001-05"
+    }
+  ],
+  "missing_coverage": "only guitars. lacks other domains",
+  "run_id": "pacs-calibration-20261010-01",
+  "condition": "calibration_visible",
+  "event_id": "CAL-20261010-001-revised-2026-10-11-01",
+  "stage": "revised",
+  "record_type": "review",
+  "raw_response": "Explanations read.\n\nI don't believe that rotation or orientation of the object should be considered semantic detail. A guitar rotated 45 degrees is still a guitar.\n\nAs for the number of subjects, I myself am unclear on whether such a detail should be considered spurious or semantic. My intuition is that, in an image with multiple items, if one item can be discerned to be the primary subject of the piece, then the semantic rationale should revolve around that one subject, as though it were alone in the image.\n\nI noticed a focus on the background of the images and the possible context. For example, in 04, the music notes are taken as possibly suggesting music or performance. I think it's good that such things are noticed, because they change the semantic meaning of an object from a guitar to a guitar being played. However, it's important to put focus on defining the image around the subject, not its background. Having flowers behind a guitar in one image and having no flowers behind a guitar in another does not change the fact that it's a guitar. Of course, it's a hard line to draw, and I'm not saying that all background elements should be ignored (for example, a human holding a guitar vs a guitar without a human could be semantically different), but just take note of the importance of focusing on the subject and the state of the subject for \"semantics\", not the surrounding elements.\n\nI think that, POTENTIALLY, a good rule of thumb is asking \"could these two images be of the same guitar instance, regardless of style, color, orientation, cropping, or other spurious change?\". Although, that leads to more questions because while different elephants could plausibly be argued to be the same, different humans or different guitars are much easier to tell apart, at least through the eyes of a human validator.\n\nUltimately, I want you to consider these thoughts moving forward. How do you think we can best incorporate these ideas? How will we solidify them into objective rules for analysis?\n\nNo change in human judgement. Next.",
+  "comment": "Explanations read.\n\nI don't believe that rotation or orientation of the object should be considered semantic detail. A guitar rotated 45 degrees is still a guitar.\n\nAs for the number of subjects, I myself am unclear on whether such a detail should be considered spurious or semantic. My intuition is that, in an image with multiple items, if one item can be discerned to be the primary subject of the piece, then the semantic rationale should revolve around that one subject, as though it were alone in the image.\n\nI noticed a focus on the background of the images and the possible context. For example, in 04, the music notes are taken as possibly suggesting music or performance. I think it's good that such things are noticed, because they change the semantic meaning of an object from a guitar to a guitar being played. However, it's important to put focus on defining the image around the subject, not its background. Having flowers behind a guitar in one image and having no flowers behind a guitar in another does not change the fact that it's a guitar. Of course, it's a hard line to draw, and I'm not saying that all background elements should be ignored (for example, a human holding a guitar vs a guitar without a human could be semantically different), but just take note of the importance of focusing on the subject and the state of the subject for \"semantics\", not the surrounding elements.\n\nI think that, POTENTIALLY, a good rule of thumb is asking \"could these two images be of the same guitar instance, regardless of style, color, orientation, cropping, or other spurious change?\". Although, that leads to more questions because while different elephants could plausibly be argued to be the same, different humans or different guitars are much easier to tell apart, at least through the eyes of a human validator.\n\nUltimately, I want you to consider these thoughts moving forward. How do you think we can best incorporate these ideas? How will we solidify them into objective rules for analysis?\n\nNo change in human judgement. Next.",
+  "unchanged_from_event_id": "CAL-20261010-001-initial-2026-10-10-01",
+  "source_response_file": "records/reviews/2026-10-11-revised-response.md",
+  "inspection_basis": "Carried forward from the displayed initial receipt under the explicit no-change instruction. Reading explanations is reported; no additional image inspection is inferred.",
+  "pair_comment_basis": "Earlier pair-specific comments retained with their original event as source; not new comments attributed to this response.",
+  "confirmation_basis": "No change in human judgement. Next. follows the displayed decision/scope receipt and explanation reveal; same receipt carried forward to revised stage.",
+  "reviewer_semantic_guidance": {
+    "rotation": "Depiction orientation alone need not change semantics.",
+    "subject_count": "Unresolved; compare exact-count and primary-subject rules prospectively.",
+    "subject_focus": "Prioritize subject structure, state and interactions; record incidental background separately.",
+    "same_instance": "Tentative compatibility heuristic, not a claim of actual identity.",
+    "rubric_status": "Prospective calibration ideas; original proposal rubric unchanged."
+  },
+  "source_cross_reference_note": "Human mentions musical notes in 04. Frozen explanations mention notation in 03 and 06. Preserve the human wording and treat the guidance as general; do not rewrite pair metadata or infer a new verdict.",
+  "counts_toward_adaptive_update": false,
+  "controlled_study_eligible": false,
+  "schema_version": 1,
+  "group_id": "CAL-20261010-001",
+  "recorded_at": "2026-10-11T22:06:23.855Z",
+  "derived_pair_receipt": [
+    {
+      "pair_id": "CAL-001-01",
+      "verdict": "reject",
+      "validation_scope": "individual",
+      "comment": "Reviewer reports preserved pick guard but a fully rounded body versus a single cutaway."
+    },
+    {
+      "pair_id": "CAL-001-02",
+      "verdict": "accept",
+      "validation_scope": "individual",
+      "comment": "Reviewer names 02 as the sole exception to rejection; no separate acceptance rationale supplied."
+    },
+    {
+      "pair_id": "CAL-001-03",
+      "verdict": "reject",
+      "validation_scope": "individual",
+      "comment": "Reviewer reports the same body shape but presence versus absence of a pick guard. The ukulele comparison is an example of ambiguous typing from proportions, not a verified relabeling."
+    },
+    {
+      "pair_id": "CAL-001-04",
+      "verdict": "reject",
+      "validation_scope": "individual",
+      "comment": ""
+    },
+    {
+      "pair_id": "CAL-001-05",
+      "verdict": "reject",
+      "validation_scope": "individual",
+      "comment": "Reviewer reports matching body shape but different pick guards, discernably different headstocks, and presence versus absence of f holes."
+    },
+    {
+      "pair_id": "CAL-001-06",
+      "verdict": "reject",
+      "validation_scope": "individual",
+      "comment": ""
+    },
+    {
+      "pair_id": "CAL-001-07",
+      "verdict": "reject",
+      "validation_scope": "individual",
+      "comment": ""
+    },
+    {
+      "pair_id": "CAL-001-08",
+      "verdict": "reject",
+      "validation_scope": "individual",
+      "comment": ""
+    },
+    {
+      "pair_id": "CAL-001-09",
+      "verdict": "reject",
+      "validation_scope": "group_scan",
+      "comment": ""
+    },
+    {
+      "pair_id": "CAL-001-10",
+      "verdict": "reject",
+      "validation_scope": "group_scan",
+      "comment": ""
+    }
+  ],
+  "previous_record_hash": "d4cdec6a9d16c359fdfb6aeb3978d304e9b8effa44361e0aa7d5b26706dacba2",
+  "record_hash": "95910b53f30df8757c52231dac43f0c55516ac5812af833281906a188606fb7e"
+}

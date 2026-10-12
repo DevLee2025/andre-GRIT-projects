@@ -1,0 +1,223 @@
+{
+  "description_version": "calibration-v1",
+  "input_package": "description_packages/batch-02",
+  "instruction_files_read": [
+    "INSTRUCTIONS.md",
+    "description.schema.json"
+  ],
+  "overview": {
+    "file": "overview.png",
+    "viewed": false
+  },
+  "viewed_original_count": 20,
+  "original_image_view_calls": 22,
+  "inspection_method": "Each original JPG was inspected with view_image using detail='original' at its native 227 x 227 resolution.",
+  "viewed_images": [
+    {
+      "image_alias": "I021",
+      "file": "I021.jpg",
+      "native_width": 227,
+      "native_height": 227,
+      "viewed_with": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I022",
+      "file": "I022.jpg",
+      "native_width": 227,
+      "native_height": 227,
+      "viewed_with": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I023",
+      "file": "I023.jpg",
+      "native_width": 227,
+      "native_height": 227,
+      "viewed_with": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I024",
+      "file": "I024.jpg",
+      "native_width": 227,
+      "native_height": 227,
+      "viewed_with": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I025",
+      "file": "I025.jpg",
+      "native_width": 227,
+      "native_height": 227,
+      "viewed_with": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I026",
+      "file": "I026.jpg",
+      "native_width": 227,
+      "native_height": 227,
+      "viewed_with": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I027",
+      "file": "I027.jpg",
+      "native_width": 227,
+      "native_height": 227,
+      "viewed_with": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I028",
+      "file": "I028.jpg",
+      "native_width": 227,
+      "native_height": 227,
+      "viewed_with": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I029",
+      "file": "I029.jpg",
+      "native_width": 227,
+      "native_height": 227,
+      "viewed_with": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I030",
+      "file": "I030.jpg",
+      "native_width": 227,
+      "native_height": 227,
+      "viewed_with": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I031",
+      "file": "I031.jpg",
+      "native_width": 227,
+      "native_height": 227,
+      "viewed_with": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I032",
+      "file": "I032.jpg",
+      "native_width": 227,
+      "native_height": 227,
+      "viewed_with": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I033",
+      "file": "I033.jpg",
+      "native_width": 227,
+      "native_height": 227,
+      "viewed_with": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I034",
+      "file": "I034.jpg",
+      "native_width": 227,
+      "native_height": 227,
+      "viewed_with": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I035",
+      "file": "I035.jpg",
+      "native_width": 227,
+      "native_height": 227,
+      "viewed_with": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I036",
+      "file": "I036.jpg",
+      "native_width": 227,
+      "native_height": 227,
+      "viewed_with": "view_image",
+      "detail": "original",
+      "view_count": 2
+    },
+    {
+      "image_alias": "I037",
+      "file": "I037.jpg",
+      "native_width": 227,
+      "native_height": 227,
+      "viewed_with": "view_image",
+      "detail": "original",
+      "view_count": 2
+    },
+    {
+      "image_alias": "I038",
+      "file": "I038.jpg",
+      "native_width": 227,
+      "native_height": 227,
+      "viewed_with": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I039",
+      "file": "I039.jpg",
+      "native_width": 227,
+      "native_height": 227,
+      "viewed_with": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I040",
+      "file": "I040.jpg",
+      "native_width": 227,
+      "native_height": 227,
+      "viewed_with": "view_image",
+      "detail": "original",
+      "view_count": 1
+    }
+  ],
+  "limitations": [
+    "All originals are 227 x 227 pixels; fine strings, tiny lettering and small hardware details are often unresolved.",
+    "Confidence values are uncalibrated visual judgments.",
+    "I022 contains seven overlapping guitars; portions of rear instruments are obscured.",
+    "I023 is an angular guitar-like instrument with unresolved front/back orientation and possible cropping at its left end.",
+    "I025 shows two guitar drawings; a hand partly covers the unfinished drawing.",
+    "I032 shows a held guitar in a playing posture, with hand occlusion and partial body cropping; sound or motion cannot be confirmed.",
+    "I035 has two necks on one shared body and is counted as one instrument.",
+    "I036 has one definite guitar and a cropped form that may be part of a second instrument; count is recorded as 1-2.",
+    "I037 contains eight cartoon figures: seven clear guitar depictions and one uncertain headstock-like figure; instrument count is recorded as 7-8.",
+    "I030 and I040 have photographic-looking rendering; photograph versus realistic rendering remains uncertain."
+  ],
+  "validation": {
+    "status": "passed",
+    "validator": "jsonschema.Draft202012Validator",
+    "schema_file": "description.schema.json",
+    "expected_record_count": 20,
+    "parsed_record_count": 20,
+    "schema_valid_record_count": 20,
+    "unique_alias_count": 20,
+    "wrapper_keys_and_values_valid": true,
+    "inner_outer_aliases_match": true,
+    "all_original_aliases_covered": true,
+    "count_bounds_consistent": true,
+    "inspection_log_aliases_match": true
+  }
+}

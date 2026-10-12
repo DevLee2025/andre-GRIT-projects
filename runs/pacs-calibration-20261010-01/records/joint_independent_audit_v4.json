@@ -1,0 +1,28 @@
+[
+  {
+    "pair_number": 8,
+    "aliases": [
+      "I040",
+      "I080"
+    ],
+    "status": "pass",
+    "visible_evidence": "Each image shows exactly one isolated electric guitar with a waisted body, pickups, controls, fretted neck and headstock, without a player or another instrument. I040 is an amber guitar angled across a black background; I080 is a smaller upright green guitar on white. Both are shown at whole-instrument scale, with their bodies and necks visible.",
+    "uncertainties": [
+      "I040's headstock tip is tightly framed at the top edge, with possible slight tip truncation; no material neck or headstock section is visibly missing.",
+      "The body outlines and apparent rendering differ, but both visibly retain the broad electric-guitar class."
+    ]
+  },
+  {
+    "pair_number": 10,
+    "aliases": [
+      "I058",
+      "I009"
+    ],
+    "status": "pass",
+    "visible_evidence": "Each image shows exactly one displayed electric guitar with pickups, controls, neck and headstock, without a player. I058 is a diagonal red guitar on white; I009 is a red guitar illustration beside an amplifier with a connecting cable. Both guitars are wholly inside their frames. The rectangular amplifier and cable in I009 are not additional guitars.",
+    "uncertainties": [
+      "I009's headstock is close to the top edge, but its outline and tuning pegs are visible.",
+      "I009's watermark and simplified hardware limit fine detail without obscuring the shared electric-guitar class, single count or whole-object extent."
+    ]
+  }
+]

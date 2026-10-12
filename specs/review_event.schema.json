@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grit.local/schemas/review-event-v1.json",
+  "title": "Chat review event v1",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["event_id", "reviewer_id", "stage", "inspection", "pair_validity", "coverage", "raw_response"],
+  "properties": {
+    "event_id": {"type": "string", "minLength": 1},
+    "reviewer_id": {"type": "string", "minLength": 1},
+    "stage": {"enum": ["initial", "revised"]},
+    "inspection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "pair_ids"],
+      "properties": {
+        "mode": {"enum": ["highlighted_only", "highlighted_and_full_contact_sheet", "full_contact_sheet_no_focused_inspection", "explicit_pair_ids"]},
+        "pair_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}}
+      }
+    },
+    "pair_validity": {"enum": ["accept", "reject", "unsure", "accept_with_exclusions"]},
+    "coverage": {"enum": ["adequate", "redundant", "incomplete", "unsure"]},
+    "exceptions": {"type": "array", "items": {"$ref": "#/$defs/pairDecision"}},
+    "pair_comments": {"type": "array", "items": {"$ref": "#/$defs/pairComment"}},
+    "missing_coverage": {"type": "string"},
+    "comment": {"type": "string"},
+    "raw_response": {"type": "string", "minLength": 1},
+    "supersedes_event_id": {"type": ["string", "null"]}
+  },
+  "$defs": {
+    "pairDecision": {
+      "type": "object", "additionalProperties": false,
+      "required": ["pair_id", "verdict", "comment"],
+      "properties": {
+        "pair_id": {"type": "string"},
+        "verdict": {"enum": ["accept", "reject", "unsure"]},
+        "comment": {"type": "string"}
+      }
+    },
+    "pairComment": {
+      "type": "object", "additionalProperties": false,
+      "required": ["pair_id", "comment", "establishes_individual_review"],
+      "properties": {
+        "pair_id": {"type": "string"},
+        "comment": {"type": "string", "minLength": 1},
+        "establishes_individual_review": {"type": "boolean", "description": "True only when the comment states a pair-specific visual judgment."}
+      }
+    }
+  }
+}

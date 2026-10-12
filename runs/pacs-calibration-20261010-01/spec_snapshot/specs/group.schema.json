@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grit.local/schemas/proposal-group-v1.json",
+  "title": "Scientific invariant-pair group v1",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["schema_version", "group_id", "run_id", "condition", "semantic_claim", "coverage_summary", "reasons_group_may_fail", "pairs"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "group_id": {"type": "string", "minLength": 1},
+    "run_id": {"type": "string", "minLength": 1},
+    "condition": {"enum": ["fixed_hidden", "fixed_visible", "adaptive_hidden", "adaptive_visible", "calibration_visible"]},
+    "semantic_claim": {"type": "string", "minLength": 1},
+    "coverage_summary": {"type": "object", "additionalProperties": {"type": "string"}},
+    "reasons_group_may_fail": {"type": "array", "items": {"type": "string"}},
+    "pairs": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/pair"}}
+  },
+  "$defs": {
+    "imageRef": {
+      "type": "object", "additionalProperties": true,
+      "required": ["id", "class", "domain", "split", "file"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "class": {"enum": ["dog", "elephant", "giraffe", "guitar", "horse", "house", "person"]},
+        "domain": {"enum": ["photo", "art_painting", "cartoon", "sketch"]},
+        "split": {"enum": ["train", "val", "test"]},
+        "file": {"type": "string", "minLength": 1},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "pair": {
+      "type": "object", "additionalProperties": true,
+      "required": ["pair_id", "position", "anchor", "candidate", "target_count", "activity_pose_state", "spurious_axes", "highlighted_roles", "semantic_rationale", "spurious_rationale", "uncertainty", "confidence"],
+      "properties": {
+        "pair_id": {"type": "string", "minLength": 1},
+        "position": {"type": "integer", "minimum": 1},
+        "anchor": {"$ref": "#/$defs/imageRef"},
+        "candidate": {"$ref": "#/$defs/imageRef"},
+        "target_count": {"type": "integer", "minimum": 1},
+        "activity_pose_state": {"type": "string", "minLength": 1},
+        "spurious_axes": {
+          "type": "array", "minItems": 1, "uniqueItems": true,
+          "items": {"enum": ["background", "palette", "lighting", "texture", "viewpoint", "crop", "composition"]}
+        },
+        "highlighted_roles": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+        "semantic_rationale": {"type": "string", "minLength": 1},
+        "spurious_rationale": {"type": "string", "minLength": 1},
+        "uncertainty": {"type": "string"},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+      }
+    }
+  }
+}

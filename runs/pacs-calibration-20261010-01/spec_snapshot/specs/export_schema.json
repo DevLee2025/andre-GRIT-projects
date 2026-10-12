@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grit.local/schemas/group-review-export-v1.json",
+  "title": "Grouped invariant-pair export tables v1",
+  "description": "Normalized table contract. Each table is exported independently to avoid empty nested structs in Parquet.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "tables"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "tables": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["invariant_pairs", "proposal_ledger", "groups", "group_members", "judgments", "image_descriptions"],
+      "properties": {
+        "invariant_pairs": {"$ref": "#/$defs/table"},
+        "proposal_ledger": {"$ref": "#/$defs/table"},
+        "groups": {"$ref": "#/$defs/table"},
+        "group_members": {"$ref": "#/$defs/table"},
+        "judgments": {"$ref": "#/$defs/table"},
+        "image_descriptions": {"$ref": "#/$defs/table"}
+      }
+    }
+  },
+  "$defs": {
+    "column": {
+      "type": "object", "additionalProperties": false,
+      "required": ["name", "type", "nullable"],
+      "properties": {
+        "name": {"type": "string"},
+        "type": {"enum": ["string", "int64", "float64", "bool", "timestamp_ms_utc", "image", "list_string", "json_string"]},
+        "nullable": {"type": "boolean"},
+        "description": {"type": "string"}
+      }
+    },
+    "table": {
+      "type": "object", "additionalProperties": false,
+      "required": ["primary_key", "columns"],
+      "properties": {
+        "primary_key": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "columns": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/column"}}
+      }
+    }
+  },
+  "x-table-contracts": {
+    "invariant_pairs": "One row per accepted pair and export subset. Includes decoded anchor_image and paired_image columns plus IDs, class, domains, semantic fields, judgment stage, validation scope, group/run provenance, spec hashes, and checksums.",
+    "proposal_ledger": "One row per proposal or abstention, including model, prompt, candidate pool, scores, explanation, uncertainty, and raw-output reference.",
+    "groups": "One row per group with semantic key, requested and actual size, coverage summary, highlighted roles, and summary versions.",
+    "group_members": "One row per pair/group membership with stable position and highlighted roles.",
+    "judgments": "One row per append-only initial, revised, correction, or confirmation event. Raw response and parsed response are JSON strings, never empty structs.",
+    "image_descriptions": "One row per image-description version with structured fields flattened or encoded as JSON strings and a raw-output reference."
+  }
+}

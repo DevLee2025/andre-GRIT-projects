@@ -1,0 +1,28 @@
+[
+  {
+    "pair_number": 6,
+    "aliases": [
+      "I057",
+      "I015"
+    ],
+    "status": "pass",
+    "visible_evidence": "Each shows exactly one displayed acoustic guitar with a waisted body, round sound hole, bridge, neck and tuning-peg headstock, without a player. I057 is a pale guitar upright on a bench; I015 is a beige diagonal illustration surrounded by musical-note symbols. Both retain whole-instrument extent; the drawn notes are not additional instruments.",
+    "uncertainties": [
+      "I057's headstock and lower body lie close to the frame edges, but no material portion is missing.",
+      "I015 is stylized and watermarked; its acoustic-guitar form, single count and full silhouette remain clear."
+    ]
+  },
+  {
+    "pair_number": 10,
+    "aliases": [
+      "I080",
+      "I009"
+    ],
+    "status": "pass",
+    "visible_evidence": "Each shows exactly one displayed electric guitar with pickups, controls, neck and headstock, without a player. I080 is a green guitar isolated on white; I009 is a red guitar illustration connected by cable to a rectangular amplifier. Both guitars are wholly inside their frames. The amplifier and cable do not add another guitar.",
+    "uncertainties": [
+      "I009's headstock is close to the top edge but its outline and tuning pegs remain visible.",
+      "I009's watermark and simplified hardware limit fine detail without obscuring the electric-guitar class, single count or whole-object extent."
+    ]
+  }
+]

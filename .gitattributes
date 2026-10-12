@@ -1,0 +1,2 @@
+# Preserve exact bytes across platforms: frozen research files carry SHA-256 hashes.
+* -text

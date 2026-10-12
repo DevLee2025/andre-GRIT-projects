@@ -1,0 +1,66 @@
+{
+  "event_id": "SMOKE-20260930-10-initial-2026-10-09-01",
+  "record_type": "review",
+  "reviewer_id": "lab-reviewer-001",
+  "reviewer_id_basis": "Local alias for the human reviewer in this chat; not an authenticated account ID.",
+  "review_date_local": "2026-10-09",
+  "timezone": "America/Indianapolis",
+  "run_id": "smoke-test-only",
+  "condition": "fixed_hidden",
+  "stage": "initial",
+  "inspection": {
+    "mode": "highlighted_and_full_contact_sheet",
+    "pair_ids": []
+  },
+  "inspection_verbatim": "highlighted + glanced over full contact sheet",
+  "pair_validity": "accept_with_exclusions",
+  "coverage": "unsure",
+  "coverage_note": "uncertain. I need more images before I can fully understand the extent of different contexts in the PACS dataset.",
+  "exceptions": [
+    {
+      "pair_id": "SMOKE-004",
+      "verdict": "reject",
+      "comment": "004 is not the same style of house"
+    },
+    {
+      "pair_id": "SMOKE-005",
+      "verdict": "reject",
+      "comment": "005 depicts a hatless woman with a fan against a sitting man with a military cap and a book (both hold objects, but they are fundamentally different)"
+    },
+    {
+      "pair_id": "SMOKE-006",
+      "verdict": "reject",
+      "comment": "006 depicts a smiling middle-aged man against a renaissance era woman with a baby"
+    },
+    {
+      "pair_id": "SMOKE-008",
+      "verdict": "reject",
+      "comment": "008 depicts two different species of dog"
+    },
+    {
+      "pair_id": "SMOKE-009",
+      "verdict": "reject",
+      "comment": "009 depicts a fully bald man against a man with a goatee and a head with hair."
+    }
+  ],
+  "pair_comments": [],
+  "missing_coverage": "",
+  "comment": "004 is not the same style of house, 005 depicts a hatless woman with a fan against a sitting man with a military cap and a book (both hold objects, but they are fundamentally different), 006 depicts a smiling middle-aged man against a renaissance era woman with a baby, 008 depicts two different species of dog, 009 depicts a fully bald man against a man with a goatee and a head with hair.",
+  "raw_response": "PACS dataset link (huggingface): [https://huggingface.co/datasets/flwrlabs/pacs](https://huggingface.co/datasets/flwrlabs/pacs)\n\nGROUP: SMOKE-20260930-10\\\nSTAGE: Initial review. condition fixed_hidden\nINSPECTED: highlighted + glanced over full contact sheet\nPAIR VALIDITY: accept with exclusions\nCOVERAGE NOTES: uncertain. I need more images before I can fully understand the extent of different contexts in the PACS dataset.\nEXCEPTIONS: SMOKE-004, SMOKE-005, SMOKE-006, SMOKE-008, SMOKE-009\nCOMMENT: 004 is not the same style of house, 005 depicts a hatless woman with a fan against a sitting man with a military cap and a book (both hold objects, but they are fundamentally different), 006 depicts a smiling middle-aged man against a renaissance era woman with a baby, 008 depicts two different species of dog, 009 depicts a fully bald man against a man with a goatee and a head with hair.\n\nPlease provide clarification on the tags of the highlighted  pairs (\"boundary placeholder\", \"seeded random\", \"typical placeholder\")\n",
+  "artifact_purpose": "smoke_test_calibration_only",
+  "scientific_export_eligible": false,
+  "counts_toward_adaptive_update": false,
+  "receipt_status": "pending_confirmation",
+  "reviewed_artifacts": [
+    {
+      "path": "group.json",
+      "sha256": "f8cfccfeb0f84c161efe35bb9e79949c7b3b433797fc9c85bcf0d0f9e771c067",
+      "bytes": 8054
+    },
+    {
+      "path": "initial.html",
+      "sha256": "8bb57436a921a43f1a51a19ea8f9544fc48c876c5033208937b097c3672f8438",
+      "bytes": 9264
+    }
+  ]
+}

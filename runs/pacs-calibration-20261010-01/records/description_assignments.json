@@ -1,0 +1,50 @@
+[
+  {
+    "batch": 1,
+    "message": "Independent visual-description task. Use ONLY this image package for inputs: runs/pacs-calibration-20261010-01/description_packages/batch-01. Read INSTRUCTIONS.md and description.schema.json there. There are 20 images with opaque aliases Ixxx.jpg plus overview.png. Inspect the pixels of EVERY individual original image (using view_image; can batch tool calls) at native resolution, using overview.png only as an index. Do not read the parent run, mapping files, other batches, existing user feedback, or proposed pairings. No matching or pair selection is requested. The package instructions are image-only; the filesystem is not technically isolated and your output must not claim technical blinding.\n\nWrite runs/pacs-calibration-20261010-01/description_packages/batch-01/descriptions.jsonl with exactly 20 JSONL wrapper records: {\"image_alias\":\"Ixxx\",\"description_version\":\"calibration-v1\",\"description\":{...conforms exactly to description.schema.json...},\"raw_output_ref\":\"description_packages/batch-01/descriptions.jsonl\"}. Describe all required visual fields with concrete concise evidence, unknown when unobservable, critical confidence from 0 to 1 uncalibrated. Count ALL visible same-category instruments including partial ones. For activity_pose_state use values such as \"isolated/displayed; whole object\", \"held; whole object\", \"actively played\", \"detail only\", \"unclear\". If image is occluded, cropped, ambiguous guitar/other instrument, say so. Do not manufacture string counts, written words, or backgrounds. Every statement needs visible support. Save independent descriptions before suggesting any category-level usable-image list.\n\nYou may edit ONLY descriptions.jsonl and inspection_log.json inside your assigned folder. Inspection log should list viewed aliases/files and any limitations, not hidden reasoning. Validate each record using jsonschema if available; otherwise check keys manually without installing packages. Return only counts, paths, and any material image ambiguity, not a long narrative. Do not communicate to the human directly or launch further agents.",
+    "public_projection": {
+      "original_message_sha256": "6a18eb396d007f69b68ed7deda06e4f5f6b64a50733dcdfe7266823baf063f82",
+      "changes": [
+        "Replaced machine-specific project root with repository-relative paths",
+        "Removed tool session agent identifiers and nicknames"
+      ],
+      "methodological_instruction_content_retained": true
+    }
+  },
+  {
+    "batch": 2,
+    "message": "Independent visual-description task. Use ONLY this image package for inputs: runs/pacs-calibration-20261010-01/description_packages/batch-02. Read INSTRUCTIONS.md and description.schema.json there. There are 20 images with opaque aliases Ixxx.jpg plus overview.png. Inspect the pixels of EVERY individual original image (using view_image; can batch tool calls) at native resolution, using overview.png only as an index. Do not read the parent run, mapping files, other batches, existing user feedback, or proposed pairings. No matching or pair selection is requested. The package instructions are image-only; the filesystem is not technically isolated and your output must not claim technical blinding.\n\nWrite runs/pacs-calibration-20261010-01/description_packages/batch-02/descriptions.jsonl with exactly 20 JSONL wrapper records: {\"image_alias\":\"Ixxx\",\"description_version\":\"calibration-v1\",\"description\":{...conforms exactly to description.schema.json...},\"raw_output_ref\":\"description_packages/batch-02/descriptions.jsonl\"}. Describe all required visual fields with concrete concise evidence, unknown when unobservable, critical confidence from 0 to 1 uncalibrated. Count ALL visible same-category instruments including partial ones. For activity_pose_state use values such as \"isolated/displayed; whole object\", \"held; whole object\", \"actively played\", \"detail only\", \"unclear\". If image is occluded, cropped, ambiguous guitar/other instrument, say so. Do not manufacture string counts, written words, or backgrounds. Every statement needs visible support. Save independent descriptions before suggesting any category-level usable-image list.\n\nYou may edit ONLY descriptions.jsonl and inspection_log.json inside your assigned folder. Inspection log should list viewed aliases/files and any limitations, not hidden reasoning. Validate each record using jsonschema if available; otherwise check keys manually without installing packages. Return only counts, paths, and any material image ambiguity, not a long narrative. Do not communicate to the human directly or launch further agents.",
+    "public_projection": {
+      "original_message_sha256": "0e2b606c33b5d53295d5ced444c302367ce5de75289cff4b2034e89383e1f145",
+      "changes": [
+        "Replaced machine-specific project root with repository-relative paths",
+        "Removed tool session agent identifiers and nicknames"
+      ],
+      "methodological_instruction_content_retained": true
+    }
+  },
+  {
+    "batch": 3,
+    "message": "Independent visual-description task. Use ONLY this image package for inputs: runs/pacs-calibration-20261010-01/description_packages/batch-03. Read INSTRUCTIONS.md and description.schema.json there. There are 20 images with opaque aliases Ixxx.jpg plus overview.png. Inspect the pixels of EVERY individual original image (using view_image; can batch tool calls) at native resolution, using overview.png only as an index. Do not read the parent run, mapping files, other batches, existing user feedback, or proposed pairings. No matching or pair selection is requested. The package instructions are image-only; the filesystem is not technically isolated and your output must not claim technical blinding.\n\nWrite runs/pacs-calibration-20261010-01/description_packages/batch-03/descriptions.jsonl with exactly 20 JSONL wrapper records: {\"image_alias\":\"Ixxx\",\"description_version\":\"calibration-v1\",\"description\":{...conforms exactly to description.schema.json...},\"raw_output_ref\":\"description_packages/batch-03/descriptions.jsonl\"}. Describe all required visual fields with concrete concise evidence, unknown when unobservable, critical confidence from 0 to 1 uncalibrated. Count ALL visible same-category instruments including partial ones. For activity_pose_state use values such as \"isolated/displayed; whole object\", \"held; whole object\", \"actively played\", \"detail only\", \"unclear\". If image is occluded, cropped, ambiguous guitar/other instrument, say so. Do not manufacture string counts, written words, or backgrounds. Every statement needs visible support. Save independent descriptions before suggesting any category-level usable-image list.\n\nYou may edit ONLY descriptions.jsonl and inspection_log.json inside your assigned folder. Inspection log should list viewed aliases/files and any limitations, not hidden reasoning. Validate each record using jsonschema if available; otherwise check keys manually without installing packages. Return only counts, paths, and any material image ambiguity, not a long narrative. Do not communicate to the human directly or launch further agents.",
+    "public_projection": {
+      "original_message_sha256": "14b63358ec288031cfbf10182baa5d67d8013b25107bc9eba0b5e232bf6f2d47",
+      "changes": [
+        "Replaced machine-specific project root with repository-relative paths",
+        "Removed tool session agent identifiers and nicknames"
+      ],
+      "methodological_instruction_content_retained": true
+    }
+  },
+  {
+    "batch": 4,
+    "message": "Independent visual-description task. Use ONLY this image package for inputs: runs/pacs-calibration-20261010-01/description_packages/batch-04. Read INSTRUCTIONS.md and description.schema.json there. There are 20 images with opaque aliases Ixxx.jpg plus overview.png. Inspect the pixels of EVERY individual original image (using view_image; can batch tool calls) at native resolution, using overview.png only as an index. Do not read the parent run, mapping files, other batches, existing user feedback, or proposed pairings. No matching or pair selection is requested. The package instructions are image-only; the filesystem is not technically isolated and your output must not claim technical blinding.\n\nWrite runs/pacs-calibration-20261010-01/description_packages/batch-04/descriptions.jsonl with exactly 20 JSONL wrapper records: {\"image_alias\":\"Ixxx\",\"description_version\":\"calibration-v1\",\"description\":{...conforms exactly to description.schema.json...},\"raw_output_ref\":\"description_packages/batch-04/descriptions.jsonl\"}. Describe all required visual fields with concrete concise evidence, unknown when unobservable, critical confidence from 0 to 1 uncalibrated. Count ALL visible same-category instruments including partial ones. For activity_pose_state use values such as \"isolated/displayed; whole object\", \"held; whole object\", \"actively played\", \"detail only\", \"unclear\". If image is occluded, cropped, ambiguous guitar/other instrument, say so. Do not manufacture string counts, written words, or backgrounds. Every statement needs visible support. Save independent descriptions before suggesting any category-level usable-image list.\n\nYou may edit ONLY descriptions.jsonl and inspection_log.json inside your assigned folder. Inspection log should list viewed aliases/files and any limitations, not hidden reasoning. Validate each record using jsonschema if available; otherwise check keys manually without installing packages. Return only counts, paths, and any material image ambiguity, not a long narrative. Do not communicate to the human directly or launch further agents.",
+    "public_projection": {
+      "original_message_sha256": "4518de4732e235e3ef20f863541f5b24898c6d62dec556a97e3a4c4e9442818b",
+      "changes": [
+        "Replaced machine-specific project root with repository-relative paths",
+        "Removed tool session agent identifiers and nicknames"
+      ],
+      "methodological_instruction_content_retained": true
+    }
+  }
+]

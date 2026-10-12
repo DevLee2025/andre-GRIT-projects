@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "dataset_name": "PACS",
+  "repository_id": "flwrlabs/pacs",
+  "repository_type": "dataset",
+  "url": "https://huggingface.co/datasets/flwrlabs/pacs",
+  "source_provided_by": "human_user",
+  "source_recorded_on": "2026-10-09",
+  "upstream_split": "train",
+  "upstream_revision": null,
+  "local_copy_verified_against_revision": false,
+  "local_manifest": "web/public/manifest.json",
+  "local_images": "web/public/pacs",
+  "local_split_policy": {
+    "ratios": {"train": 0.8, "val": 0.1, "test": 0.1},
+    "stratified_by": ["domain", "class"],
+    "configured_seed": 20260623,
+    "source": "pipeline/config.py and pipeline/splits.py",
+    "proposal_default": "train"
+  },
+  "notes": "The Hub's single train split contains the source corpus, not this project's training population. The local manifest governs train/validation/test eligibility. The historical download revision has not been established; this record does not claim byte-for-byte equivalence to a pinned upstream revision."
+}

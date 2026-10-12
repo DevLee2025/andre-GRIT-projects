@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grit.local/schemas/chat-review-run-v1.json",
+  "title": "Chat-only grouped review run v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "run_id", "created_at", "seed", "model", "reasoning_effort",
+    "conditions", "condition_order", "proposal_split", "evaluation_protocol", "target_domain", "judgment_stage_for_export",
+    "group_sizes", "adaptive_update", "spurious_axes", "manifest", "candidate_pool", "spec_snapshot"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "run_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,79}$"},
+    "created_at": {"type": "string", "format": "date-time"},
+    "seed": {"type": "integer", "minimum": 0, "maximum": 4294967295},
+    "model": {"type": "string", "minLength": 1},
+    "reasoning_effort": {"type": "string", "minLength": 1},
+    "conditions": {
+      "type": "array", "minItems": 1, "uniqueItems": true,
+      "items": {"enum": ["fixed_hidden", "fixed_visible", "adaptive_hidden", "adaptive_visible", "calibration_visible"]}
+    },
+    "condition_order": {
+      "type": "array", "minItems": 1, "uniqueItems": true,
+      "items": {"enum": ["fixed_hidden", "fixed_visible", "adaptive_hidden", "adaptive_visible", "calibration_visible"]}
+    },
+    "proposal_split": {"enum": ["train", "val", "test"]},
+    "evaluation_protocol": {"const": "pacs_held_out_domain"},
+    "target_domain": {"type": ["string", "null"], "enum": [null, "photo", "art_painting", "cartoon", "sketch"]},
+    "judgment_stage_for_export": {"enum": ["initial", "revised"]},
+    "group_sizes": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": [10, 20, 40]}},
+    "adaptive_update": {
+      "type": "object", "additionalProperties": false,
+      "required": ["completed_initial_groups", "individually_audited_pairs"],
+      "properties": {
+        "completed_initial_groups": {"type": "integer", "minimum": 1},
+        "individually_audited_pairs": {"type": "integer", "minimum": 1}
+      }
+    },
+    "spurious_axes": {
+      "type": "array", "minItems": 1, "uniqueItems": true,
+      "items": {"enum": ["background", "palette", "lighting", "texture", "viewpoint", "crop", "composition"]}
+    },
+    "manifest": {"$ref": "#/$defs/fileFingerprint"},
+    "candidate_pool": {
+      "type": "object", "additionalProperties": false,
+      "required": ["image_count", "classes", "domains", "split_counts", "index_file", "sha256", "images_hashed", "image_hash_algorithm"],
+      "properties": {
+        "image_count": {"type": "integer", "minimum": 1},
+        "classes": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "domains": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "split_counts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+        "index_file": {"type": "string"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "images_hashed": {"type": "boolean"},
+        "image_hash_algorithm": {"enum": ["sha256", "not_computed"]}
+      }
+    },
+    "spec_snapshot": {
+      "type": "array", "minItems": 1,
+      "items": {"$ref": "#/$defs/fileFingerprint"}
+    }
+  },
+  "$defs": {
+    "fileFingerprint": {
+      "type": "object", "additionalProperties": false,
+      "required": ["path", "sha256", "bytes"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "bytes": {"type": "integer", "minimum": 0}
+      }
+    }
+  }
+}

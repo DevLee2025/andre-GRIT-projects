@@ -1,0 +1,199 @@
+{
+  "description_version": "calibration-v1",
+  "input_scope": "Only the assigned package was used as description input. Scope was followed by instruction; no technical filesystem isolation is claimed.",
+  "instruction_files_read": [
+    "INSTRUCTIONS.md",
+    "description.schema.json"
+  ],
+  "overview": {
+    "file": "overview.png",
+    "viewed": false,
+    "role": "Not used; each original was viewed directly."
+  },
+  "inspection_method": "view_image with detail='original'; no enlargement, crop, resampling or enhancement was used for inspection.",
+  "viewed_original_count": 20,
+  "viewed_images": [
+    {
+      "image_alias": "I001",
+      "file": "I001.jpg",
+      "detail": "original",
+      "view_count": 1,
+      "native_width_px": 227,
+      "native_height_px": 227
+    },
+    {
+      "image_alias": "I002",
+      "file": "I002.jpg",
+      "detail": "original",
+      "view_count": 1,
+      "native_width_px": 227,
+      "native_height_px": 227
+    },
+    {
+      "image_alias": "I003",
+      "file": "I003.jpg",
+      "detail": "original",
+      "view_count": 1,
+      "native_width_px": 227,
+      "native_height_px": 227
+    },
+    {
+      "image_alias": "I004",
+      "file": "I004.jpg",
+      "detail": "original",
+      "view_count": 1,
+      "native_width_px": 227,
+      "native_height_px": 227
+    },
+    {
+      "image_alias": "I005",
+      "file": "I005.jpg",
+      "detail": "original",
+      "view_count": 1,
+      "native_width_px": 227,
+      "native_height_px": 227
+    },
+    {
+      "image_alias": "I006",
+      "file": "I006.jpg",
+      "detail": "original",
+      "view_count": 1,
+      "native_width_px": 227,
+      "native_height_px": 227
+    },
+    {
+      "image_alias": "I007",
+      "file": "I007.jpg",
+      "detail": "original",
+      "view_count": 1,
+      "native_width_px": 227,
+      "native_height_px": 227
+    },
+    {
+      "image_alias": "I008",
+      "file": "I008.jpg",
+      "detail": "original",
+      "view_count": 2,
+      "native_width_px": 227,
+      "native_height_px": 227
+    },
+    {
+      "image_alias": "I009",
+      "file": "I009.jpg",
+      "detail": "original",
+      "view_count": 1,
+      "native_width_px": 227,
+      "native_height_px": 227
+    },
+    {
+      "image_alias": "I010",
+      "file": "I010.jpg",
+      "detail": "original",
+      "view_count": 1,
+      "native_width_px": 227,
+      "native_height_px": 227
+    },
+    {
+      "image_alias": "I011",
+      "file": "I011.jpg",
+      "detail": "original",
+      "view_count": 1,
+      "native_width_px": 227,
+      "native_height_px": 227
+    },
+    {
+      "image_alias": "I012",
+      "file": "I012.jpg",
+      "detail": "original",
+      "view_count": 1,
+      "native_width_px": 227,
+      "native_height_px": 227
+    },
+    {
+      "image_alias": "I013",
+      "file": "I013.jpg",
+      "detail": "original",
+      "view_count": 1,
+      "native_width_px": 227,
+      "native_height_px": 227
+    },
+    {
+      "image_alias": "I014",
+      "file": "I014.jpg",
+      "detail": "original",
+      "view_count": 1,
+      "native_width_px": 227,
+      "native_height_px": 227
+    },
+    {
+      "image_alias": "I015",
+      "file": "I015.jpg",
+      "detail": "original",
+      "view_count": 1,
+      "native_width_px": 227,
+      "native_height_px": 227
+    },
+    {
+      "image_alias": "I016",
+      "file": "I016.jpg",
+      "detail": "original",
+      "view_count": 1,
+      "native_width_px": 227,
+      "native_height_px": 227
+    },
+    {
+      "image_alias": "I017",
+      "file": "I017.jpg",
+      "detail": "original",
+      "view_count": 2,
+      "native_width_px": 227,
+      "native_height_px": 227
+    },
+    {
+      "image_alias": "I018",
+      "file": "I018.jpg",
+      "detail": "original",
+      "view_count": 1,
+      "native_width_px": 227,
+      "native_height_px": 227
+    },
+    {
+      "image_alias": "I019",
+      "file": "I019.jpg",
+      "detail": "original",
+      "view_count": 1,
+      "native_width_px": 227,
+      "native_height_px": 227
+    },
+    {
+      "image_alias": "I020",
+      "file": "I020.jpg",
+      "detail": "original",
+      "view_count": 1,
+      "native_width_px": 227,
+      "native_height_px": 227
+    }
+  ],
+  "limitations": [
+    "Images are small and often soft, stylized or watermarked. Unresolved strings, small hardware and text are not inferred.",
+    "I008 includes a second tan guitar represented only by a cropped body fragment; both instruments are counted.",
+    "I017 contains one definite guitar and a blurred cropped foreground shape at left that could be an additional instrument; count is recorded as uncertain, minimum 1 and maximum 2.",
+    "I003, I011 and I018 have stylized instrument forms that limit exact guitar, bass or other guitar-like subtype identification.",
+    "Cropping, occlusion and uncertain playing state are described per image.",
+    "All critical_confidence values are uncalibrated."
+  ],
+  "output_records": 20,
+  "output_file": "descriptions.jsonl",
+  "validation": {
+    "status": "passed",
+    "validator": "jsonschema.Draft202012Validator",
+    "schema_file": "description.schema.json",
+    "validated_description_count": 20,
+    "wrapper_validation": "Exact keys, matching nested aliases, calibration-v1 and exact raw_output_ref passed.",
+    "coverage_validation": "Exactly 20 nonblank JSONL records; I001 through I020 each occur once.",
+    "additional_checks": "Count bounds ordered; observed counts exact; unknown observations use null values; all 20 original views logged.",
+    "packages_installed": false
+  },
+  "category_lists_or_pairs_produced": false,
+  "dimension_verification": "Original JPEG dimensions read without resampling."
+}

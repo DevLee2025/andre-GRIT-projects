@@ -1,0 +1,237 @@
+{
+  "schema_version": 1,
+  "group_id": "SMOKE-20260930-10",
+  "run_id": "smoke-test-only",
+  "condition": "fixed_hidden",
+  "semantic_claim": "Not evaluated. This artifact tests static HTML and review plumbing only.",
+  "coverage_summary": {
+    "background": "not evaluated",
+    "palette": "not evaluated",
+    "lighting": "not evaluated",
+    "texture": "not evaluated",
+    "viewpoint": "not evaluated",
+    "crop": "not evaluated",
+    "composition": "not evaluated"
+  },
+  "reasons_group_may_fail": [
+    "Pairs have not been visually described or jointly checked by a proposer."
+  ],
+  "pairs": [
+    {
+      "pair_id": "SMOKE-001",
+      "position": 1,
+      "anchor": {
+        "id": "photo/guitar/0074",
+        "class": "guitar",
+        "domain": "photo",
+        "file": "photo/guitar/0074.jpg"
+      },
+      "candidate": {
+        "id": "cartoon/guitar/0108",
+        "class": "guitar",
+        "domain": "cartoon",
+        "file": "cartoon/guitar/0108.jpg"
+      },
+      "highlighted_roles": [
+        "typical_placeholder"
+      ],
+      "semantic_rationale": "Unverified smoke-test pair selected only by manifest class.",
+      "spurious_rationale": "Different manifest domains; visual differences have not been model-checked.",
+      "uncertainty": "This is a layout and plumbing fixture, not a scientific proposal.",
+      "confidence": null
+    },
+    {
+      "pair_id": "SMOKE-002",
+      "position": 2,
+      "anchor": {
+        "id": "cartoon/giraffe/0322",
+        "class": "giraffe",
+        "domain": "cartoon",
+        "file": "cartoon/giraffe/0322.jpg"
+      },
+      "candidate": {
+        "id": "sketch/giraffe/0523",
+        "class": "giraffe",
+        "domain": "sketch",
+        "file": "sketch/giraffe/0523.jpg"
+      },
+      "highlighted_roles": [
+        "seeded_random"
+      ],
+      "semantic_rationale": "Unverified smoke-test pair selected only by manifest class.",
+      "spurious_rationale": "Different manifest domains; visual differences have not been model-checked.",
+      "uncertainty": "This is a layout and plumbing fixture, not a scientific proposal.",
+      "confidence": null
+    },
+    {
+      "pair_id": "SMOKE-003",
+      "position": 3,
+      "anchor": {
+        "id": "photo/person/0032",
+        "class": "person",
+        "domain": "photo",
+        "file": "photo/person/0032.jpg"
+      },
+      "candidate": {
+        "id": "art_painting/person/0364",
+        "class": "person",
+        "domain": "art_painting",
+        "file": "art_painting/person/0364.jpg"
+      },
+      "highlighted_roles": [],
+      "semantic_rationale": "Unverified smoke-test pair selected only by manifest class.",
+      "spurious_rationale": "Different manifest domains; visual differences have not been model-checked.",
+      "uncertainty": "This is a layout and plumbing fixture, not a scientific proposal.",
+      "confidence": null
+    },
+    {
+      "pair_id": "SMOKE-004",
+      "position": 4,
+      "anchor": {
+        "id": "photo/house/0144",
+        "class": "house",
+        "domain": "photo",
+        "file": "photo/house/0144.jpg"
+      },
+      "candidate": {
+        "id": "cartoon/house/0276",
+        "class": "house",
+        "domain": "cartoon",
+        "file": "cartoon/house/0276.jpg"
+      },
+      "highlighted_roles": [],
+      "semantic_rationale": "Unverified smoke-test pair selected only by manifest class.",
+      "spurious_rationale": "Different manifest domains; visual differences have not been model-checked.",
+      "uncertainty": "This is a layout and plumbing fixture, not a scientific proposal.",
+      "confidence": null
+    },
+    {
+      "pair_id": "SMOKE-005",
+      "position": 5,
+      "anchor": {
+        "id": "art_painting/person/0278",
+        "class": "person",
+        "domain": "art_painting",
+        "file": "art_painting/person/0278.jpg"
+      },
+      "candidate": {
+        "id": "sketch/person/0009",
+        "class": "person",
+        "domain": "sketch",
+        "file": "sketch/person/0009.jpg"
+      },
+      "highlighted_roles": [],
+      "semantic_rationale": "Unverified smoke-test pair selected only by manifest class.",
+      "spurious_rationale": "Different manifest domains; visual differences have not been model-checked.",
+      "uncertainty": "This is a layout and plumbing fixture, not a scientific proposal.",
+      "confidence": null
+    },
+    {
+      "pair_id": "SMOKE-006",
+      "position": 6,
+      "anchor": {
+        "id": "photo/person/0316",
+        "class": "person",
+        "domain": "photo",
+        "file": "photo/person/0316.jpg"
+      },
+      "candidate": {
+        "id": "art_painting/person/0056",
+        "class": "person",
+        "domain": "art_painting",
+        "file": "art_painting/person/0056.jpg"
+      },
+      "highlighted_roles": [],
+      "semantic_rationale": "Unverified smoke-test pair selected only by manifest class.",
+      "spurious_rationale": "Different manifest domains; visual differences have not been model-checked.",
+      "uncertainty": "This is a layout and plumbing fixture, not a scientific proposal.",
+      "confidence": null
+    },
+    {
+      "pair_id": "SMOKE-007",
+      "position": 7,
+      "anchor": {
+        "id": "cartoon/elephant/0330",
+        "class": "elephant",
+        "domain": "cartoon",
+        "file": "cartoon/elephant/0330.jpg"
+      },
+      "candidate": {
+        "id": "sketch/elephant/0449",
+        "class": "elephant",
+        "domain": "sketch",
+        "file": "sketch/elephant/0449.jpg"
+      },
+      "highlighted_roles": [],
+      "semantic_rationale": "Unverified smoke-test pair selected only by manifest class.",
+      "spurious_rationale": "Different manifest domains; visual differences have not been model-checked.",
+      "uncertainty": "This is a layout and plumbing fixture, not a scientific proposal.",
+      "confidence": null
+    },
+    {
+      "pair_id": "SMOKE-008",
+      "position": 8,
+      "anchor": {
+        "id": "photo/dog/0098",
+        "class": "dog",
+        "domain": "photo",
+        "file": "photo/dog/0098.jpg"
+      },
+      "candidate": {
+        "id": "cartoon/dog/0040",
+        "class": "dog",
+        "domain": "cartoon",
+        "file": "cartoon/dog/0040.jpg"
+      },
+      "highlighted_roles": [],
+      "semantic_rationale": "Unverified smoke-test pair selected only by manifest class.",
+      "spurious_rationale": "Different manifest domains; visual differences have not been model-checked.",
+      "uncertainty": "This is a layout and plumbing fixture, not a scientific proposal.",
+      "confidence": null
+    },
+    {
+      "pair_id": "SMOKE-009",
+      "position": 9,
+      "anchor": {
+        "id": "cartoon/person/0026",
+        "class": "person",
+        "domain": "cartoon",
+        "file": "cartoon/person/0026.jpg"
+      },
+      "candidate": {
+        "id": "photo/person/0153",
+        "class": "person",
+        "domain": "photo",
+        "file": "photo/person/0153.jpg"
+      },
+      "highlighted_roles": [],
+      "semantic_rationale": "Unverified smoke-test pair selected only by manifest class.",
+      "spurious_rationale": "Different manifest domains; visual differences have not been model-checked.",
+      "uncertainty": "This is a layout and plumbing fixture, not a scientific proposal.",
+      "confidence": null
+    },
+    {
+      "pair_id": "SMOKE-010",
+      "position": 10,
+      "anchor": {
+        "id": "art_painting/dog/0174",
+        "class": "dog",
+        "domain": "art_painting",
+        "file": "art_painting/dog/0174.jpg"
+      },
+      "candidate": {
+        "id": "sketch/dog/0572",
+        "class": "dog",
+        "domain": "sketch",
+        "file": "sketch/dog/0572.jpg"
+      },
+      "highlighted_roles": [
+        "boundary_placeholder"
+      ],
+      "semantic_rationale": "Unverified smoke-test pair selected only by manifest class.",
+      "spurious_rationale": "Different manifest domains; visual differences have not been model-checked.",
+      "uncertainty": "This is a layout and plumbing fixture, not a scientific proposal.",
+      "confidence": null
+    }
+  ]
+}

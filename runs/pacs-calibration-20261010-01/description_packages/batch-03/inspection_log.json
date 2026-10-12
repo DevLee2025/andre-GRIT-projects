@@ -1,0 +1,312 @@
+{
+  "package": "description_packages/batch-03",
+  "description_version": "calibration-v1",
+  "inspection_basis": "Each original JPEG was inspected individually with view_image using detail='original' at its native 227 by 227 pixel resolution.",
+  "instructions_read": [
+    "INSTRUCTIONS.md",
+    "description.schema.json"
+  ],
+  "overview": {
+    "file": "overview.png",
+    "viewed": false,
+    "used": false
+  },
+  "viewed_originals": [
+    {
+      "image_alias": "I041",
+      "file": "I041.jpg",
+      "native_dimensions": [
+        227,
+        227
+      ],
+      "tool": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I042",
+      "file": "I042.jpg",
+      "native_dimensions": [
+        227,
+        227
+      ],
+      "tool": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I043",
+      "file": "I043.jpg",
+      "native_dimensions": [
+        227,
+        227
+      ],
+      "tool": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I044",
+      "file": "I044.jpg",
+      "native_dimensions": [
+        227,
+        227
+      ],
+      "tool": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I045",
+      "file": "I045.jpg",
+      "native_dimensions": [
+        227,
+        227
+      ],
+      "tool": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I046",
+      "file": "I046.jpg",
+      "native_dimensions": [
+        227,
+        227
+      ],
+      "tool": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I047",
+      "file": "I047.jpg",
+      "native_dimensions": [
+        227,
+        227
+      ],
+      "tool": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I048",
+      "file": "I048.jpg",
+      "native_dimensions": [
+        227,
+        227
+      ],
+      "tool": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I049",
+      "file": "I049.jpg",
+      "native_dimensions": [
+        227,
+        227
+      ],
+      "tool": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I050",
+      "file": "I050.jpg",
+      "native_dimensions": [
+        227,
+        227
+      ],
+      "tool": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I051",
+      "file": "I051.jpg",
+      "native_dimensions": [
+        227,
+        227
+      ],
+      "tool": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I052",
+      "file": "I052.jpg",
+      "native_dimensions": [
+        227,
+        227
+      ],
+      "tool": "view_image",
+      "detail": "original",
+      "view_count": 2
+    },
+    {
+      "image_alias": "I053",
+      "file": "I053.jpg",
+      "native_dimensions": [
+        227,
+        227
+      ],
+      "tool": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I054",
+      "file": "I054.jpg",
+      "native_dimensions": [
+        227,
+        227
+      ],
+      "tool": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I055",
+      "file": "I055.jpg",
+      "native_dimensions": [
+        227,
+        227
+      ],
+      "tool": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I056",
+      "file": "I056.jpg",
+      "native_dimensions": [
+        227,
+        227
+      ],
+      "tool": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I057",
+      "file": "I057.jpg",
+      "native_dimensions": [
+        227,
+        227
+      ],
+      "tool": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I058",
+      "file": "I058.jpg",
+      "native_dimensions": [
+        227,
+        227
+      ],
+      "tool": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I059",
+      "file": "I059.jpg",
+      "native_dimensions": [
+        227,
+        227
+      ],
+      "tool": "view_image",
+      "detail": "original",
+      "view_count": 1
+    },
+    {
+      "image_alias": "I060",
+      "file": "I060.jpg",
+      "native_dimensions": [
+        227,
+        227
+      ],
+      "tool": "view_image",
+      "detail": "original",
+      "view_count": 1
+    }
+  ],
+  "original_image_count": 20,
+  "unique_originals_viewed": 20,
+  "original_view_calls": 21,
+  "output_files": [
+    "descriptions.jsonl",
+    "inspection_log.json"
+  ],
+  "description_records": 20,
+  "confidence_interpretation": "Critical confidence values are uncalibrated judgments from the visible pixels.",
+  "limitations": [
+    "All originals are 227 by 227 pixels; fine strings, small hardware and many watermark or headstock markings are unresolved.",
+    "Cropped portions, hidden surfaces and off-frame objects are unobservable.",
+    "Stylized drawings may not support a definite guitar subtype or an exact rendering technique.",
+    "Still images do not establish motion; activity descriptions use only depicted hands, supports and object state."
+  ],
+  "material_image_ambiguities": [
+    {
+      "image_alias": "I041",
+      "limitation": "The red electric guitar body is cropped at the top and left."
+    },
+    {
+      "image_alias": "I045",
+      "limitation": "The extreme upper-right headstock tip meets the frame boundary and may be clipped."
+    },
+    {
+      "image_alias": "I046",
+      "limitation": "The cartoon has an acoustic-like body without a conventional visible sound hole; top and lateral outlines are cropped."
+    },
+    {
+      "image_alias": "I047",
+      "limitation": "The compact cartoon stringed instrument may be a ukulele rather than a guitar."
+    },
+    {
+      "image_alias": "I048",
+      "limitation": "The stylized electric stringed instrument may be a guitar or bass."
+    },
+    {
+      "image_alias": "I052",
+      "limitation": "The headstock has overlapping pale and brown shapes whose construction is indistinct; one body and one neck are traceable."
+    },
+    {
+      "image_alias": "I053",
+      "limitation": "The lower guitar body is cropped, and its support is not visible. A separate keyboard appears in the background."
+    },
+    {
+      "image_alias": "I054",
+      "limitation": "The stylized electric stringed instrument may be a guitar or bass."
+    },
+    {
+      "image_alias": "I055",
+      "limitation": "The top of the cartoon headstock is cropped; the pointing hand meets the right boundary. The microphone gesture does not depict the strings being played."
+    },
+    {
+      "image_alias": "I056",
+      "limitation": "The upper neck and headstock are cropped; electric guitar versus bass is uncertain. The offset wall silhouette is a shadow."
+    },
+    {
+      "image_alias": "I060",
+      "limitation": "The upper neck and headstock are outside the frame."
+    }
+  ],
+  "validation": {
+    "schema_file": "description.schema.json",
+    "validator": "jsonschema.Draft202012Validator",
+    "schema_checked": true,
+    "schema_valid_records": 20,
+    "record_count": 20,
+    "unique_aliases": 20,
+    "original_alias_coverage_complete": true,
+    "wrapper_keys_exact": true,
+    "inner_and_wrapper_aliases_match": true,
+    "description_version": "calibration-v1",
+    "raw_output_ref": "description_packages/batch-03/descriptions.jsonl",
+    "count_bounds_checked": true,
+    "errors": []
+  }
+}

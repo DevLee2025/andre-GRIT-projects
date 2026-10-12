@@ -1,0 +1,141 @@
+{
+  "status": "ready_for_initial_human_review",
+  "created_at": "2026-10-11T00:23:08.038Z",
+  "group_id": "CAL-20261010-001",
+  "pairs": 10,
+  "unique_images": 20,
+  "described_images": 80,
+  "eligible_source_training_images": 4850,
+  "held_out_domain": "sketch",
+  "human_judgments_created": 0,
+  "checks": {
+    "schema": true,
+    "frozen_inputs": true,
+    "train_only": true,
+    "held_out_domain_absent": true,
+    "exact_duplicates_absent": true,
+    "image_reuse_absent": true,
+    "all_images_decode": true,
+    "descriptions_saved_before_matching": true,
+    "initial_rationale_absent": true
+  },
+  "group": {
+    "path": "records/groups/CAL-20261010-001.json",
+    "sha256": "3d1dbe17ce9d9a2844dbc989830f25ff7841bdc98225311f12769d9338314133",
+    "bytes": 44648
+  },
+  "initial_html": {
+    "path": "review/CAL-20261010-001/initial.html",
+    "sha256": "3d1324ce238cf70d229334641425293f4045ebae8d3579d577d6976f71c827de",
+    "bytes": 13134
+  },
+  "review_assets": [
+    {
+      "path": "review/CAL-20261010-001/initial_assets/CAL-001-01-anchor.jpg",
+      "sha256": "84cfed55a35fa83757a83091c16bd6c77e0efd14534a561a57f27f0905f7e197",
+      "bytes": 11505
+    },
+    {
+      "path": "review/CAL-20261010-001/initial_assets/CAL-001-01-candidate.jpg",
+      "sha256": "be34fd3395a0768cf9ce05ea0100cdb2c6f742a2ec793e4280067c39a4e695e9",
+      "bytes": 8330
+    },
+    {
+      "path": "review/CAL-20261010-001/initial_assets/CAL-001-02-anchor.jpg",
+      "sha256": "b09c267a1728b9432ceef34175cd08c015f33f4aa7620ec7b32ba4ce58933f01",
+      "bytes": 8648
+    },
+    {
+      "path": "review/CAL-20261010-001/initial_assets/CAL-001-02-candidate.jpg",
+      "sha256": "a76320b1eebe4c961f3eedb185bbfded173810e8e205a95c71e363c0ee661b43",
+      "bytes": 10481
+    },
+    {
+      "path": "review/CAL-20261010-001/initial_assets/CAL-001-03-anchor.jpg",
+      "sha256": "06833934a9d10387a4c20f716956a0fa082581959ce1d3bbb4c82130241f05b3",
+      "bytes": 23886
+    },
+    {
+      "path": "review/CAL-20261010-001/initial_assets/CAL-001-03-candidate.jpg",
+      "sha256": "dc1453be8397049c61147e62356f43b8f274d5322f69c0a92c5c5d101012f25c",
+      "bytes": 11223
+    },
+    {
+      "path": "review/CAL-20261010-001/initial_assets/CAL-001-04-anchor.jpg",
+      "sha256": "24aa7c30c2fe2071313c1a04ed6dc4aa306f77796ac9f8fbca5e5cea6bd7876f",
+      "bytes": 16007
+    },
+    {
+      "path": "review/CAL-20261010-001/initial_assets/CAL-001-04-candidate.jpg",
+      "sha256": "2df99872cab6dc14cd13e92002253615d0d607b07b6cb58e40157ead0e33d66b",
+      "bytes": 11962
+    },
+    {
+      "path": "review/CAL-20261010-001/initial_assets/CAL-001-05-anchor.jpg",
+      "sha256": "c605e4a449f3114ee984cc0a1318c60a060dc7cde5cd349144a12bd0c49a27a4",
+      "bytes": 27747
+    },
+    {
+      "path": "review/CAL-20261010-001/initial_assets/CAL-001-05-candidate.jpg",
+      "sha256": "76809ad31961045c1f8276614eae77926c403f17819d490ca05c4eac56be206d",
+      "bytes": 14528
+    },
+    {
+      "path": "review/CAL-20261010-001/initial_assets/CAL-001-06-anchor.jpg",
+      "sha256": "833627b726f7639d67e5fbdd7e7323cdae1ffcde9b089c3e69d68444cf3025c9",
+      "bytes": 19978
+    },
+    {
+      "path": "review/CAL-20261010-001/initial_assets/CAL-001-06-candidate.jpg",
+      "sha256": "88ab0a22bef14a4889de9bcbabbaab322ab45f1aeaf627a94301f964cf66fe7a",
+      "bytes": 18039
+    },
+    {
+      "path": "review/CAL-20261010-001/initial_assets/CAL-001-07-anchor.jpg",
+      "sha256": "6beaa86f8216a0d4eca81a6421992469576dd57658131dac8e1d606a836cd24d",
+      "bytes": 11589
+    },
+    {
+      "path": "review/CAL-20261010-001/initial_assets/CAL-001-07-candidate.jpg",
+      "sha256": "7cc2615599f0974bdcdf3cf287691c8a3b9308ed3013060d26582fcdad23843b",
+      "bytes": 12645
+    },
+    {
+      "path": "review/CAL-20261010-001/initial_assets/CAL-001-08-anchor.jpg",
+      "sha256": "3f852c3a10c358820047aeb159d790049b7ab8575d8c84bd88125099f12c24b7",
+      "bytes": 11931
+    },
+    {
+      "path": "review/CAL-20261010-001/initial_assets/CAL-001-08-candidate.jpg",
+      "sha256": "921b79331ee64d074e3af37b7946c54eddf2a6b478bb04ff48293626fca663a0",
+      "bytes": 5269
+    },
+    {
+      "path": "review/CAL-20261010-001/initial_assets/CAL-001-09-anchor.jpg",
+      "sha256": "964d1b367b35a75f01565a8e1a42ca7df2785e3db9bb3729153ea5bbc4cbde5e",
+      "bytes": 8931
+    },
+    {
+      "path": "review/CAL-20261010-001/initial_assets/CAL-001-09-candidate.jpg",
+      "sha256": "3b8447c5b9b03f1b855786ca24b9e9f62f6af4910007b4c5e245c81ce4cbf7a7",
+      "bytes": 7964
+    },
+    {
+      "path": "review/CAL-20261010-001/initial_assets/CAL-001-10-anchor.jpg",
+      "sha256": "437c34f2786659a1fd5612eaae0e5083cbfc20a0edd0d8be7730f31ccdaf8dbb",
+      "bytes": 8332
+    },
+    {
+      "path": "review/CAL-20261010-001/initial_assets/CAL-001-10-candidate.jpg",
+      "sha256": "11a51a1ff4049b1b457a30613ba2b74866cc16171d8bbcd8a2a4745d9949383d",
+      "bytes": 13903
+    }
+  ],
+  "limitations": [
+    "A model pixel check is proposal evidence, not human validation.",
+    "One class and two domains; not an estimate of PACS-wide coverage.",
+    "The coordinator has seen previous human feedback; exclude from controlled-condition comparisons.",
+    "Seed fixes sampling and audit selection, not stochastic model text regeneration.",
+    "No downstream training, robustness measurement, or accepted-pair export has been performed."
+  ]
+}

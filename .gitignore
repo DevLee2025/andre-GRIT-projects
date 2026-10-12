@@ -1,0 +1,35 @@
+# Local environments, caches and build products
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+dist/
+dist-ssr/
+.vite/
+.pytest_cache/
+.test-tmp/
+.DS_Store
+Thumbs.db
+*.log
+
+# Credentials, local app settings and participant-server storage
+.env
+.env.*
+!.env.example
+.aws/
+.codex/
+.claude/
+.gemini/
+server/data/
+irb/
+
+# Downloaded corpus, intermediate features and new generated outputs
+web/public/pacs/
+web/public/triplet_stats.json
+pipeline/data/
+pipeline/out/
+vlm_eval/out/
+artifacts/publication/
+
+# Scientific snapshots under runs/ and artifacts/ are intentionally tracked.

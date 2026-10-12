@@ -1,0 +1,7 @@
+{
+  "question": "For the next calibration, should we judge each pair under both exact-count and primary-subject rules, so we can compare them before choosing a default?",
+  "answer": "Compare both rules (recommended)",
+  "source": "Human async response in this chat",
+  "authorizes": "Compare both rules on the same next-calibration pairs",
+  "does_not_establish": "A new universal default count rule or retrospective relabeling"
+}

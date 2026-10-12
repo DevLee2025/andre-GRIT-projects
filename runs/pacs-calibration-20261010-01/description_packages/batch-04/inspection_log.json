@@ -1,0 +1,156 @@
+{
+  "package": "description_packages/batch-04",
+  "inspection_method": "Each individual original JPG was viewed using view_image with detail='original'.",
+  "input_files_read": [
+    "INSTRUCTIONS.md",
+    "description.schema.json"
+  ],
+  "overview_used": false,
+  "viewed_images": [
+    {
+      "image_alias": "I061",
+      "file": "I061.jpg",
+      "view_tool": "view_image",
+      "detail": "original"
+    },
+    {
+      "image_alias": "I062",
+      "file": "I062.jpg",
+      "view_tool": "view_image",
+      "detail": "original"
+    },
+    {
+      "image_alias": "I063",
+      "file": "I063.jpg",
+      "view_tool": "view_image",
+      "detail": "original"
+    },
+    {
+      "image_alias": "I064",
+      "file": "I064.jpg",
+      "view_tool": "view_image",
+      "detail": "original"
+    },
+    {
+      "image_alias": "I065",
+      "file": "I065.jpg",
+      "view_tool": "view_image",
+      "detail": "original"
+    },
+    {
+      "image_alias": "I066",
+      "file": "I066.jpg",
+      "view_tool": "view_image",
+      "detail": "original"
+    },
+    {
+      "image_alias": "I067",
+      "file": "I067.jpg",
+      "view_tool": "view_image",
+      "detail": "original"
+    },
+    {
+      "image_alias": "I068",
+      "file": "I068.jpg",
+      "view_tool": "view_image",
+      "detail": "original"
+    },
+    {
+      "image_alias": "I069",
+      "file": "I069.jpg",
+      "view_tool": "view_image",
+      "detail": "original"
+    },
+    {
+      "image_alias": "I070",
+      "file": "I070.jpg",
+      "view_tool": "view_image",
+      "detail": "original"
+    },
+    {
+      "image_alias": "I071",
+      "file": "I071.jpg",
+      "view_tool": "view_image",
+      "detail": "original"
+    },
+    {
+      "image_alias": "I072",
+      "file": "I072.jpg",
+      "view_tool": "view_image",
+      "detail": "original"
+    },
+    {
+      "image_alias": "I073",
+      "file": "I073.jpg",
+      "view_tool": "view_image",
+      "detail": "original"
+    },
+    {
+      "image_alias": "I074",
+      "file": "I074.jpg",
+      "view_tool": "view_image",
+      "detail": "original"
+    },
+    {
+      "image_alias": "I075",
+      "file": "I075.jpg",
+      "view_tool": "view_image",
+      "detail": "original"
+    },
+    {
+      "image_alias": "I076",
+      "file": "I076.jpg",
+      "view_tool": "view_image",
+      "detail": "original"
+    },
+    {
+      "image_alias": "I077",
+      "file": "I077.jpg",
+      "view_tool": "view_image",
+      "detail": "original"
+    },
+    {
+      "image_alias": "I078",
+      "file": "I078.jpg",
+      "view_tool": "view_image",
+      "detail": "original"
+    },
+    {
+      "image_alias": "I079",
+      "file": "I079.jpg",
+      "view_tool": "view_image",
+      "detail": "original"
+    },
+    {
+      "image_alias": "I080",
+      "file": "I080.jpg",
+      "view_tool": "view_image",
+      "detail": "original"
+    }
+  ],
+  "original_images_viewed": 20,
+  "description_records": 20,
+  "confidence_note": "critical_confidence values are subjective and uncalibrated.",
+  "limitations": [
+    "Fine strings, small hardware, labels and watermark text are not always resolved at the originals' native resolution; no exact string counts were inferred.",
+    "I065: conventional instrument versus toy/controller is uncertain; a possible additional guitar depiction on packaging leaves the count at 1–2.",
+    "I070: the unusual stringed object is guitar-like, but precise instrument identity is uncertain.",
+    "I078: the guitar-shaped object may be a cake or model rather than a playable instrument.",
+    "Frame cropping, object overlap and playing-hand occlusion are documented per image; I072 contains three guitars and I074 contains two.",
+    "Playing activity is inferred from visible hand positions in still images; motion cannot be verified."
+  ],
+  "validation": {
+    "status": "passed",
+    "method": "jsonschema.Draft202012Validator",
+    "schema_file": "description.schema.json",
+    "records_validated": 20,
+    "unique_aliases": 20,
+    "wrapper_checks": "passed",
+    "inspection_log_checks": "passed"
+  },
+  "native_resolution_pixels": {
+    "width": 227,
+    "height": 227,
+    "applies_to_all_originals": true
+  }
+}

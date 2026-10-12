@@ -1,0 +1,28 @@
+[
+  {
+    "pair_number": 1,
+    "aliases": [
+      "I028",
+      "I034"
+    ],
+    "status": "pass",
+    "visible_evidence": "Each shows exactly one displayed acoustic guitar with a waisted wooden-colored body, round sound hole, bridge, fretted neck and headstock, without a player. I028 is strongly foreshortened in an oblique photograph; I034 is a horizontal tan illustration. Both include the whole instrument.",
+    "uncertainties": [
+      "I028's perspective makes the neck appear short relative to the body. The neck and headstock are visible rather than materially cropped; the headstock lies close to the right edge.",
+      "Fine construction details are limited by the small image size."
+    ]
+  },
+  {
+    "pair_number": 5,
+    "aliases": [
+      "I021",
+      "I029"
+    ],
+    "status": "pass",
+    "visible_evidence": "Each shows exactly one displayed electric-guitar form with body, pickups, fretted neck and headstock, without a player. I021 is a brown guitar resting on vegetation; I029 is a red illustration with curved sound-hole marks. Both are shown at whole-instrument extent, and no additional instrument is visible.",
+    "uncertainties": [
+      "I021's headstock is close to the right edge and fine hardware is soft, but no substantial neck or headstock portion is missing.",
+      "I029's upper-left headstock and tuning marks are tightly framed. The pair shares the broad electric-guitar class; its visible body construction differs."
+    ]
+  }
+]

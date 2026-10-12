@@ -1,0 +1,19 @@
+{
+  "revision": "MWD-003",
+  "recorded_at": "2026-10-11T22:11:24.066Z",
+  "record_type": "post_review_calibration_working_definition",
+  "snapshot": {
+    "path": "artifacts/definition-history/MWD-003.md",
+    "sha256": "4bf2698271ded16840f83425e3a9753aa33fad2f976af59d566b2550cfaec9fe",
+    "bytes": 10565
+  },
+  "governs_existing_proposals": false,
+  "controlled_condition_update": false,
+  "history_note": "MWD-001 and MWD-002 are explicitly retrospective reconstructions within this first archive.",
+  "sources": [
+    "runs/pacs-calibration-20261010-01/records/reviews/2026-10-10-initial-response.md",
+    "runs/pacs-calibration-20261010-01/records/reviews/2026-10-11-revised-response.md",
+    "runs/pacs-calibration-20261010-01/records/reviews/2026-10-11-count-policy-answer.json",
+    "runs/pacs-calibration-20261010-01/records/reviews/2026-10-11-definition-and-disclosure-request.md"
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "reviewer_id": "lab-reviewer-001",
+  "reviewer_id_basis": "Local alias for the human reviewer in this chat; not an authenticated account ID.",
+  "run_id": "smoke-test-only",
+  "condition": "fixed_hidden",
+  "inspection": {
+    "mode": "highlighted_and_full_contact_sheet",
+    "pair_ids": []
+  },
+  "pair_validity": "accept_with_exclusions",
+  "coverage": "unsure",
+  "coverage_note": "uncertain. I need more images before I can fully understand the extent of different contexts in the PACS dataset.",
+  "exceptions": [
+    {
+      "comment": "004 is not the same style of house",
+      "pair_id": "SMOKE-004",
+      "verdict": "reject"
+    },
+    {
+      "comment": "005 depicts a hatless woman with a fan against a sitting man with a military cap and a book (both hold objects, but they are fundamentally different)",
+      "pair_id": "SMOKE-005",
+      "verdict": "reject"
+    },
+    {
+      "comment": "006 depicts a smiling middle-aged man against a renaissance era woman with a baby",
+      "pair_id": "SMOKE-006",
+      "verdict": "reject"
+    },
+    {
+      "comment": "008 depicts two different species of dog",
+      "pair_id": "SMOKE-008",
+      "verdict": "reject"
+    },
+    {
+      "comment": "009 depicts a fully bald man against a man with a goatee and a head with hair.",
+      "pair_id": "SMOKE-009",
+      "verdict": "reject"
+    }
+  ],
+  "pair_comments": [],
+  "missing_coverage": "",
+  "comment": "004 is not the same style of house, 005 depicts a hatless woman with a fan against a sitting man with a military cap and a book (both hold objects, but they are fundamentally different), 006 depicts a smiling middle-aged man against a renaissance era woman with a baby, 008 depicts two different species of dog, 009 depicts a fully bald man against a man with a goatee and a head with hair.",
+  "artifact_purpose": "smoke_test_calibration_only",
+  "scientific_export_eligible": false,
+  "counts_toward_adaptive_update": false,
+  "event_id": "SMOKE-20260930-10-revised-2026-10-10-01",
+  "record_type": "review",
+  "stage": "revised",
+  "review_date_local": "2026-10-10",
+  "timezone": "America/Indianapolis",
+  "raw_response": "Sick. Looks like it works. Confirm. No changes to judgement.",
+  "unchanged_from_event_id": "SMOKE-20260930-10-initial-2026-10-09-01",
+  "inspection_basis": "Carried forward from the confirmed initial review; no additional focused inspection claimed.",
+  "carried_forward_fields": [
+    "inspection",
+    "exceptions",
+    "pair_comments",
+    "comment",
+    "coverage_note",
+    "missing_coverage"
+  ],
+  "confirmation_basis": "The human explicitly confirms unchanged judgments in this response.",
+  "receipt_status": "confirmed_by_explicit_unchanged_response",
+  "explanation_effect_evaluation_eligible": false,
+  "reviewed_artifacts": [
+    {
+      "path": "group.json",
+      "sha256": "f8cfccfeb0f84c161efe35bb9e79949c7b3b433797fc9c85bcf0d0f9e771c067",
+      "bytes": 8054
+    },
+    {
+      "path": "revised.html",
+      "sha256": "7b487ca5de1d47820512f35e997ffd823e98509c29297e00e4f269aac5f323e3",
+      "bytes": 15183
+    }
+  ],
+  "schema_version": 1,
+  "group_id": "SMOKE-20260930-10",
+  "recorded_at": "2026-10-10T17:12:53.302Z",
+  "derived_pair_receipt": [
+    {
+      "pair_id": "SMOKE-001",
+      "verdict": "accept",
+      "validation_scope": "individual",
+      "comment": ""
+    },
+    {
+      "pair_id": "SMOKE-002",
+      "verdict": "accept",
+      "validation_scope": "individual",
+      "comment": ""
+    },
+    {
+      "pair_id": "SMOKE-003",
+      "verdict": "accept",
+      "validation_scope": "group_scan",
+      "comment": ""
+    },
+    {
+      "pair_id": "SMOKE-004",
+      "verdict": "reject",
+      "validation_scope": "individual",
+      "comment": "004 is not the same style of house"
+    },
+    {
+      "pair_id": "SMOKE-005",
+      "verdict": "reject",
+      "validation_scope": "individual",
+      "comment": "005 depicts a hatless woman with a fan against a sitting man with a military cap and a book (both hold objects, but they are fundamentally different)"
+    },
+    {
+      "pair_id": "SMOKE-006",
+      "verdict": "reject",
+      "validation_scope": "individual",
+      "comment": "006 depicts a smiling middle-aged man against a renaissance era woman with a baby"
+    },
+    {
+      "pair_id": "SMOKE-007",
+      "verdict": "accept",
+      "validation_scope": "group_scan",
+      "comment": ""
+    },
+    {
+      "pair_id": "SMOKE-008",
+      "verdict": "reject",
+      "validation_scope": "individual",
+      "comment": "008 depicts two different species of dog"
+    },
+    {
+      "pair_id": "SMOKE-009",
+      "verdict": "reject",
+      "validation_scope": "individual",
+      "comment": "009 depicts a fully bald man against a man with a goatee and a head with hair."
+    },
+    {
+      "pair_id": "SMOKE-010",
+      "verdict": "accept",
+      "validation_scope": "individual",
+      "comment": ""
+    }
+  ],
+  "previous_record_hash": "c2efe83230015daf665096368515597aa7dd06451019fe0813f65bf4df2a5ef6",
+  "record_hash": "c08e7083a58d676c958cc96def5ac75a2206842d35e79e868ee079aa5146a36e"
+}

@@ -1,0 +1,89 @@
+{
+  "event_id": "CAL-20261010-001-initial-2026-10-10-01",
+  "reviewer_id": "lab-reviewer-001",
+  "stage": "initial",
+  "inspection": {
+    "mode": "highlighted_and_full_contact_sheet",
+    "pair_ids": []
+  },
+  "pair_validity": "reject",
+  "coverage": "incomplete",
+  "exceptions": [
+    {
+      "pair_id": "CAL-001-02",
+      "verdict": "accept",
+      "comment": "Reviewer names 02 as the sole exception to rejection; no separate acceptance rationale supplied."
+    }
+  ],
+  "pair_comments": [
+    {
+      "pair_id": "CAL-001-01",
+      "comment": "Reviewer reports preserved pick guard but a fully rounded body versus a single cutaway.",
+      "establishes_individual_review": true
+    },
+    {
+      "pair_id": "CAL-001-03",
+      "comment": "Reviewer reports the same body shape but presence versus absence of a pick guard. The ukulele comparison is an example of ambiguous typing from proportions, not a verified relabeling.",
+      "establishes_individual_review": true
+    },
+    {
+      "pair_id": "CAL-001-05",
+      "comment": "Reviewer reports matching body shape but different pick guards, discernably different headstocks, and presence versus absence of f holes.",
+      "establishes_individual_review": true
+    }
+  ],
+  "missing_coverage": "only guitars. lacks other domains",
+  "comment": "01, 03, 04, 05, 06, 07, 08, 09, 10 were all rejected. 03, while both having the same body shape, differ in having and not having a pick guard. 05, while matching in body shape, have different pick guards, have discernably different headstocks, and differ in having or not having f holes. Most other exceptions have differences in body shape. For example, 01 preserves the pick guard, but one has a fully rounded body (like that of an acoustic guitar while the other has a single cutaway. Notice that color and pattern were not considered semantic detail. Additionally, proportions were also not considered semantic detail, despite being a clue that the instrument depicted is fundamentally not a guitar (a ukelele, for example, in 03), because proportions may differ based on artstyle and proportions alone are not enough to discern instrument typing (a guitar without a human holding it may just be a ukelele up close)",
+  "raw_response": "GROUP: CAL-20261010-001\nSTAGE: Initial review. condition calibration_visible\nINSPECTED: highlighted + glanced over full contact sheet\nPAIR VALIDITY: reject with exclusions\nCOVERAGE NOTES: only guitars. lacks other domains\nEXCEPTIONS: 02\nCOMMENT: 01, 03, 04, 05, 06, 07, 08, 09, 10 were all rejected. 03, while both having the same body shape, differ in having and not having a pick guard. 05, while matching in body shape, have different pick guards, have discernably different headstocks, and differ in having or not having f holes. Most other exceptions have differences in body shape. For example, 01 preserves the pick guard, but one has a fully rounded body (like that of an acoustic guitar while the other has a single cutaway. Notice that color and pattern were not considered semantic detail. Additionally, proportions were also not considered semantic detail, despite being a clue that the instrument depicted is fundamentally not a guitar (a ukelele, for example, in 03), because proportions may differ based on artstyle and proportions alone are not enough to discern instrument typing (a guitar without a human holding it may just be a ukelele up close)\n\nnext.",
+  "record_type": "review",
+  "run_id": "pacs-calibration-20261010-01",
+  "condition": "calibration_visible",
+  "reported_pair_validity": "reject with exclusions",
+  "reported_rejected_positions": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "reported_exception_positions": [
+    2
+  ],
+  "interpretation_notes": [
+    "Normalize reject with exclusions as group reject plus an accept override for CAL-001-02; this preserves the human's explicit rejection list.",
+    "Coverage incomplete is derived from only guitars and missing other domains; no specific target-domain access is authorized.",
+    "Highlighted positions 01,04,06,07,08; exception 02 and specific visual comments 01,03,05 establish focused review under the frozen protocol.",
+    "Positions 09 and 10 are explicitly rejected but have no distinct focused-inspection claim or individual visual explanation; conservatively retain group_scan rather than infer focused inspection from the rejection list.",
+    "Most other exceptions have body-shape differences is retained as a group-level concern, not attributed to every unnamed individual pair.",
+    "Human ukulele comparison is not a corrected dataset label. Neither image metadata nor the frozen proposals are changed."
+  ],
+  "reviewer_semantic_guidance": {
+    "construction_concerns": [
+      "body contour and cutaway",
+      "pick guard presence and shape",
+      "headstock structure",
+      "f-hole presence"
+    ],
+    "not_semantic_in_this_review": [
+      "color",
+      "surface pattern",
+      "proportions alone"
+    ],
+    "instrument_typing": "Proportions alone do not establish guitar versus ukulele; style and framing may change apparent proportions.",
+    "status": "Recorded reviewer guidance and prospective criteria; no active-rubric modification."
+  },
+  "advance_request": {
+    "raw_text": "next.",
+    "provided_with_initial_review": true,
+    "authorizes_explanation_reveal": true,
+    "post_receipt_confirmation": false
+  },
+  "source_response_file": "records/reviews/2026-10-10-initial-response.md",
+  "scope_receipt_status": "pending_confirmation_or_correction",
+  "counts_toward_adaptive_update": false,
+  "controlled_study_eligible": false
+}

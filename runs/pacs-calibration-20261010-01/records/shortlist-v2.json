@@ -1,0 +1,16 @@
+{
+  "group_id": "CAL-20261010-001",
+  "basis": "Second draft before any human exposure. Preserve shortlist.json as the first model proposal. Pair 01 substitutes I028 for I027 to avoid uncertain truncation at the headstock; pair 05 substitutes a complete electric pair I021/I029 for I049/I079 because the former photo has a clearly truncated headstock. All independent descriptions remain unchanged.",
+  "pairs": [
+    ["I028", "I034"],
+    ["I030", "I051"],
+    ["I031", "I016"],
+    ["I044", "I010"],
+    ["I021", "I029"],
+    ["I057", "I050"],
+    ["I067", "I061"],
+    ["I040", "I058"],
+    ["I063", "I039"],
+    ["I080", "I026"]
+  ]
+}

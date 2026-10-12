@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grit.local/schemas/image-description-v1.json",
+  "title": "PACS image description v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "image_alias",
+    "visible_category",
+    "target_count",
+    "activity_pose_state",
+    "orientation",
+    "viewpoint",
+    "scale",
+    "crop",
+    "occlusion",
+    "interactions",
+    "background",
+    "rendering",
+    "palette",
+    "lighting",
+    "texture",
+    "composition",
+    "text_symbols",
+    "ambiguities",
+    "critical_confidence",
+    "concise_description"
+  ],
+  "properties": {
+    "image_alias": {"type": "string", "minLength": 1},
+    "visible_category": {"$ref": "#/$defs/observation"},
+    "target_count": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "minimum", "maximum", "evidence"],
+      "properties": {
+        "status": {"enum": ["observed", "unknown", "not_applicable"]},
+        "minimum": {"type": ["integer", "null"], "minimum": 0},
+        "maximum": {"type": ["integer", "null"], "minimum": 0},
+        "evidence": {"type": "string"}
+      }
+    },
+    "activity_pose_state": {"$ref": "#/$defs/observation"},
+    "orientation": {"$ref": "#/$defs/observation"},
+    "viewpoint": {"$ref": "#/$defs/observation"},
+    "scale": {"$ref": "#/$defs/observation"},
+    "crop": {"$ref": "#/$defs/observation"},
+    "occlusion": {"$ref": "#/$defs/observation"},
+    "interactions": {"$ref": "#/$defs/observation"},
+    "background": {"$ref": "#/$defs/observation"},
+    "rendering": {"$ref": "#/$defs/observation"},
+    "palette": {"$ref": "#/$defs/observation"},
+    "lighting": {"$ref": "#/$defs/observation"},
+    "texture": {"$ref": "#/$defs/observation"},
+    "composition": {"$ref": "#/$defs/observation"},
+    "text_symbols": {"$ref": "#/$defs/observation"},
+    "ambiguities": {"type": "array", "items": {"type": "string"}},
+    "critical_confidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["visible_category", "target_count", "activity_pose_state"],
+      "properties": {
+        "visible_category": {"type": "number", "minimum": 0, "maximum": 1},
+        "target_count": {"type": "number", "minimum": 0, "maximum": 1},
+        "activity_pose_state": {"type": "number", "minimum": 0, "maximum": 1}
+      }
+    },
+    "concise_description": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "value", "evidence"],
+      "properties": {
+        "status": {"enum": ["observed", "unknown", "not_applicable"]},
+        "value": {"type": ["string", "null"]},
+        "evidence": {"type": "string"}
+      }
+    }
+  }
+}
